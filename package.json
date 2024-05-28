@@ -1,6 +1,7 @@
 {
     "private": true,
     "scripts": {
+        "test": "npx tailwindcss -i ./dist/input.css -o ./dist/tailwind.css --watch",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",

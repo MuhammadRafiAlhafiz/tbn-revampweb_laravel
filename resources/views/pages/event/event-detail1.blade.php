@@ -10,11 +10,10 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="shortcut icon" href="{{ asset('assets/logo-1.svg') }}" type="image/svg+xml" />
-    
   </head>
   <body class="font-popins">
     <!-- NAVBAR -->
-    <nav class="bg-biru py-5 flex items-center justify-between w-full">
+    <nav class="bg-biru flex items-center justify-between w-full">
       <a href="{{ route('event') }}">
         <img
           src="../assets/panah.svg"
@@ -253,6 +252,5 @@
       </div>
     </section>
     <!-- END FOOTR -->
-
   </body>
 </html>
