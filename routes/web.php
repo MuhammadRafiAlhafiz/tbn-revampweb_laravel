@@ -1,4 +1,6 @@
 <?php
+use App\Models\Choose;
+use App\Models\Page;
 use App\Models\Program;
 use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
@@ -18,7 +20,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('home');
+    $page = Page::all();
+    $partner = Choose::all();
+    return view('home', ['page' => $page, 'partner' => $partner]);
 })->name('home');
 
 Route::get('/about', function () {

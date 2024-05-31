@@ -12,6 +12,7 @@
 
   <body class="font-popins">
     <!-- NAVBAR --> 
+    @foreach ($page as $page )
     <nav
       id="navbar"
       class="px-8 py-2 md:py-1 fixed w-full font-jakarta z-50 shadow-lg backdrop-blur-lg bg-biru"
@@ -113,6 +114,9 @@
     <!-- END NAVBAR -->
 
     <!-- HOME PAGE -->
+
+      
+
     <section
       id="home"
       class="bg-[url('../assets/navbar.svg')] bg-cover bg-center relative w-full"
@@ -123,15 +127,12 @@
         <h1
           class="text-[30px] md:text-[56px] font-bold text-center leading-tight md:leading-normal"
         >
-          Transforming Businesses, Transforming the World With TBN Alliance!
+          {{$page->title}}
         </h1>
         <h1
           class="font-semibold text-[15px] md:text-[27px] text-center leading-tight md:leading-normal mt-7 md:mt-8"
         >
-          TBN Alliance invites you to be part of a vibrant community geared
-          towards success! Together, we can create opportunities, expand
-          networks, and achieve remarkable feats. Let's make dreams happen
-          together!
+{{$page->desc}}
         </h1>
       </div>
     </section>
@@ -155,18 +156,9 @@
             About TBN Alliance
           </h1>
           <p class="text-sm md:text-base">
-            The business world is currently experiencing a significant
-            transformation. Consumers, investors and regulators are increasingly
-            demanding that companies operate sustainably, taking into account
-            their impact on the environment and society.
+      {{$page->about}}
           </p>
-          <p class="text-sm md:text-base mt-4">
-            The Transformational Business Network (TBN) Alliance is a global
-            community of visionary business leaders committed to building a more
-            sustainable and profitable future. We pioneer innovative solutions
-            that empower companies to thrive while minimizing their
-            environmental impact.
-          </p>
+
           <a href="{{ route('about') }}"
             ><button
               class="border-2 border-hijau text-hijau p-2 rounded-[16px] mt-4 hover:bg-slate-400 duration-300"
@@ -176,7 +168,7 @@
           >
         </div>
       </div>
-    </section>
+    </section>    @endforeach
     <!-- END CONTENT ABOUT -->
 
     <!-- CONTENT OUR MISSION -->
@@ -191,13 +183,7 @@
             Our Mission
           </h1>
           <p class="mt-10 md:mt-28 text-justify text-[21px] font-semibold">
-            The TBN Alliance nurtures purpose-driven businesses to thrive,
-            aiming to reduce poverty and promote environmental sustainability.
-            We foster a global movement for social good, empowering
-            entrepreneurs, and directly benefiting families and communities. Our
-            ambitious aim is to ignite an impact movement, uniting people
-            worldwide to leverage business for social transformation,
-            particularly supporting SMEs in emerging markets.
+            {{$page->mission }}
           </p>
         </div>
         <div class="flexn flex-col">
@@ -405,75 +391,23 @@
       <div class="w-full md:w-[800px]">
         <div class="swiper-container">
           <div class="swiper-wrapper">
+            @foreach ($partner as $partner )
+              
+     
             <div class="swiper-slide">
               <div
                 class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-2xl shadow-md"
               >
                 <img
-                  src="../assets/partner1.svg"
+                  src="<?= $_ENV['APP_URL_BACKEND'] ?>/uploads/page/<?= $partner->image?>"
                   alt="Image 1"
                   class="w-[1167px] h-[110px]"
                 />
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
-              >
-                <img
-                  src="../assets/partner2.svg"
-                  alt="Image 2"
-                  class="w-[1167px] h-[110px]"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
-              >
-                <img
-                  src="../assets/partner3.svg"
-                  alt="Image 3"
-                  class="w-[1167px] h-[110px]"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
-              >
-                <img
-                  src="../assets/partner4.svg"
-                  alt="Image 4"
-                  class="w-[1167px] h-[110px]"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
-              >
-                <img
-                  src="../assets/partner5.svg"
-                  alt="Image 5"
-                  class="w-[1167px] h-[110px]"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
-              >
-                <img
-                  src="../assets/partner6.svg"
-                  alt="Image 6"
-                  class="w-[1167px] h-[110px]"
-                />
-              </div>
-            </div>
-          </div>
+            </div>       @endforeach
         </div>
       </div>
+    </div>
     </div>
     <!-- END OUR PARTNERS -->
 

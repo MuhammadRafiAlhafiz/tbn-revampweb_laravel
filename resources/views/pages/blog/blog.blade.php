@@ -183,7 +183,7 @@
           >
             {{$blog->title}}
           </h1>
-          <p class="w-[375px] h-[125px] font-popins text-[20px] font-normal">
+          <p class="w-[375px] mt-5 font-popins text-[20px] font-normal">
             {{$blog->content}}
           </p>
           <img src="../assets/garis-blog.svg" alt="" class="mt-10" />
