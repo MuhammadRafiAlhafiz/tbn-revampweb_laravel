@@ -1,5 +1,6 @@
 <?php
-
+use App\Models\Program;
+use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,41 +14,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
 Route::get('/', function () {
     return view('home');
-})->name('home');;
+})->name('home');
 
 Route::get('/about', function () {
     return view('pages.about.about');
 })->name('about');
 
 Route::get('/blog', function () {
-    return view('pages.blog.blog');
+    $blogs = Blog::all();
+    return view('pages.blog.blog', ['blogs' => $blogs]);
 })->name('blog');
 
-Route::get('/blog-detail1', function () {
-    return view('pages.blog.blog-detail1');
-})->name('blog-detail1');
+Route::get('/blog-detail', function () {
+    return view('pages.blog.blog-detail');
+})->name('blog-detail');
 
-Route::get('/blog-detail2', function () {
-    return view('pages.blog.blog-detail2');
-})->name('blog-detail2');
-
-Route::get('/blog-detail3', function () {
-    return view('pages.blog.blog-detail3');
-})->name('blog-detail3');
-
-Route::get('/blog-detail4', function () {
-    return view('pages.blog.blog-detail4');
-})->name('blog-detail4');
-
-Route::get('/blog-detail5', function () {
-    return view('pages.blog.blog-detail5');
-})->name('blog-detail5');
-
-Route::get('/blog-detail6', function () {
-    return view('pages.blog.blog-detail6');
-})->name('blog-detail6');
 
 Route::get('/contact', function () {
     return view('pages.contact.contact');
@@ -58,41 +44,22 @@ Route::get('/thanks', function () {
 })->name('thanks');
 
 Route::get('/event', function () {
-    return view('pages.event.event');
+    $programs = Program::all();
+    return view('pages.event.event', ['programs' => $programs]);
 })->name('event');
 
-Route::get('/event-detail1', function () {
-    return view('pages.event.event-detail1');
-})->name('event-detail1');
+Route::get('/event-detail/{id}', function ($id) {
+    $program = Program::findOrFail($id);
+    return view('pages.event.event-detail', ['program' => $program]);
+})->name('event-detail');
 
-Route::get('/event-detail2', function () {
-    return view('pages.event.event-detail2');
-})->name('event-detail2');
 
-Route::get('/event-detail3', function () {
-    return view('pages.event.event-detail3');
-})->name('event-detail3');
-
-Route::get('/event-detail4', function () {
-    return view('pages.event.event-detail4');
-})->name('event-detail4');
-
-Route::get('/event-feedback1', function () {
-    return view('pages.event.event-feedback1');
-})->name('event-feedback1');
-
-Route::get('/event-feedback2', function () {
-    return view('pages.event.event-feedback2');
-})->name('event-feedback2');
-
-Route::get('/event-feedback3', function () {
-    return view('pages.event.event-feedback3');
-})->name('event-feedback3');
-
-Route::get('/event-feedback4', function () {
-    return view('pages.event.event-feedback4');
-})->name('event-feedback4');
-    
+Route::get('/event-feedback/{id}', function ($id) {
+    $program = Program::findOrFail($id);
+ 
+    return view('pages.event.event-feedback', ['program' => $program]);
+})->name('event-feedback');
+ 
 Route::get('/event-register', function () {
     return view('pages.event.event-register');
 })->name('event.register');
@@ -105,7 +72,7 @@ Route::get('/sign', function () {
     return view('pages.login.sign');
 })->name('sign');
 
-Route::get('/eamil-confirm', function () {
+Route::get('/email-confirm', function () {
     return view('pages.login.email-confirm');
 })->name('email-confirm');
 

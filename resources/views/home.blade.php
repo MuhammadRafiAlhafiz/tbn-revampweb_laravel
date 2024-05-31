@@ -370,7 +370,7 @@
                 Read More
               </p>
             </a>
-            <a href="{{ route('event-detail1') }}">
+            <a href="/">
               <p
                 class="border bg-biru p-[15px] w-[232px] h-[59px] rounded-2xl text-center"
               >

@@ -30,27 +30,30 @@
 
     <!-- Banner event 1 -->
     <section id="Payment-section">
-      <div class="flex flex-col justify-center items-center">
+      <div class="flex flex-col justify-center items-center mt-10">
         <img
           class="w-[500px] h-[750px]"
-          src="../assets/banner-event2.svg"
-          alt=""
+          src="<?= $_ENV['APP_URL_BACKEND'] ?>/images/<?= $program->poster ?>" alt=""
+   
         />
-        <span class="w-[1000px]">
-          <a href="{{ route('event') }}"><p class="text-hijau font-nunito text-[20px] font-normal">
-            [ About Conference ]
-          </p></a>
-          <h1 class="font-popins text-[34px] font-semibold py-2">
-            TBN Asia Conference 2023          </h1>
-          <div class="w-[967px] h-[250px] font-popins text-[21px] font-semibold">
-          <p class="py-1">
-            In a world once plagued by environmental degradation and societal inequalities, a transformative movement emerged, igniting a path towards a sustainable future. This narrative follows the lives of four individuals whose passion and dedication became catalysts for change in agriculture, education, green technology, digital innovation, and art and culture.
-          </p>
-
-          <p class="py-5"
-            >Together, they embarked on a shared mission to harmonize humanity's relationship with the planet and shape a brighter tomorrow.</p
+        <div class="w-[1000px] mt-10">
+          <a href="{{ route('event') }}">
+            <p class="text-hijau py-5 font-nunito text-[20px] font-normal">
+              [ {{$program->place}} ]
+            </p>
+          </a>
+          <h1 class="font-popins text-[34px] font-semibold">
+            {{$program->name}}
+          </h1>
+          <div
+            class="w-[967px] h-[250px] font-popins text-[21px] font-semibold"
           >
-      </div>
+            <p class="py-1">
+              {{$program->desc}}
+            </p>
+           
+          </div>
+        </div>
       </div>
     </section>
     <!-- END Banner Event 1 -->
@@ -142,7 +145,7 @@
           </div>
         </div>
         <hr class="w-[700px] border-t-3 border-gray-300 mt-2" />
-        <a href="{{ route('event-feedback2') }}">
+        <a href="{{ route('event-feedback', ['id' => $program->id]) }}">
           <div class="flex gap-2 mt-5">
             <img src="../assets/event-feedbackrefresh.svg" alt="Refresh" />
             <p class="text-[11px] font-bold text-gray-500">LOAD MORE REVIEWS</p>
@@ -231,8 +234,8 @@
       </div>
     </section>
     <!-- END THANK YOU SECTION -->
-    <!-- FOOTER -->
-    <section class="bg-white mt-10">
+     <!-- FOOTER -->
+     <section class="bg-white mt-10">
       <div class="flex flex-col md:flex-row md:p-10 justify-between">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
           <img src="../assets/logo footer.svg" alt="" />
@@ -315,7 +318,6 @@
       </div>
     </section>
     <!-- END FOOTR -->
-    
     <!-- THANK YOU SECTION (Initially Hidden) -->
 
     <script>

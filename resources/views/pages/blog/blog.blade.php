@@ -168,31 +168,31 @@
     <!-- TOP ARTICLES -->
     <section class="mt-[300px]">
       <h1 class="font-popins text-[56px] font-bold ml-24">TOP ARTICLES</h1>
-      <div class="flex justify-center items-center gap-24 mt-10">
+      <div class="flex justify-center items-center gap-24 mt-10 mx-32">
         <!-- Article 1 -->
-        <div class="">
+        @php $counter = 0; @endphp
+        @foreach ($blogs as $blog)
+        <div class="col">
           <img
-            src="../assets/blog-artikel1.svg"
-            alt=""
+            src="<?= $_ENV['APP_URL_BACKEND'] ?>/images/<?= $blog->thumbnail ?>" alt="tumbnail img"
+    
             class="w-[377px] h-[444px]"
           />
           <h1
             class="w-[379px] h-[103px] font-popins text-[27px] font-semibold mt-3"
           >
-            Upaya Pemerintah Mengatasi Kemiskinan di Indonesia
+            {{$blog->title}}
           </h1>
           <p class="w-[375px] h-[125px] font-popins text-[20px] font-normal">
-            Kemiskinan suatu topik yang terus diperbincangkan sampai saat ini,
-            sebagai indikator tolak ukur mengenai kesejahteraan dan kemakmuran
-            masyarakat.
+            {{$blog->content}}
           </p>
           <img src="../assets/garis-blog.svg" alt="" class="mt-10" />
           <p
             class="w-[248px] font-popins text-[13px] font-normal text-center py-5 ml-16"
           >
-            William David P • 06 Februari 2020
+            Update By • {{$blog->updated_at}}
           </p>
-          <a href="{{ route('blog-detail1') }}"
+          <a href="{{ route('blog-detail') }}"
             ><button
               class="border py-[14px] px-[98px] gap-[10px] justify-center items-center rounded-3xl ml-14 bg-biru text-white"
             >
@@ -200,181 +200,15 @@
             </button></a
           >
         </div>
+        @php $counter++; @endphp
+        @if ($counter % 3 == 0)
+            </div><div class="flex justify-center items-center gap-24 mt-16 mx-32"> <!-- Menutup row sebelum membuka yang baru -->
+        @endif
+    @endforeach
+      </div>
         <!-- END Article 1 -->
 
-        <!-- Article 2 -->
-        <div class="">
-          <img
-            src="../assets/blog-artikel2.svg"
-            alt=""
-            class="w-[377px] h-[444px]"
-          />
-          <h1
-            class="w-[379px] h-[103px] font-popins text-[27px] font-semibold mt-3"
-          >
-            Reduce: Pengertian, Prinsip, Manfaat dan Penerapannya
-          </h1>
-          <p class="w-[375px] h-[125px] font-popins text-[20px] font-normal">
-            Konsep green living sekarang ini menjadi salah satu tren yang
-            diikuti oleh banyak orang. Rumus 3R, dipecahkan menjadi reduce,
-            reuse, dan recycle.
-          </p>
-          <img src="../assets/garis-blog.svg" alt="" class="mt-10" />
-          <p
-            class="w-[248px] font-popins text-[13px] font-normal text-center py-5 ml-16"
-          >
-            Amira K • 07 September 2022
-          </p>
-          <a href="{{ route('blog-detail2') }}"
-            ><button
-              class="border py-[14px] px-[98px] gap-[10px] justify-center items-center rounded-3xl ml-14 bg-biru text-white"
-            >
-              Read More
-            </button></a
-          >
-        </div>
-        <!-- END Article 2 -->
-
-        <!-- Article 3 -->
-        <div class="">
-          <img
-            src="../assets/blog-artikel3.svg"
-            alt=""
-            class="w-[377px] h-[444px]"
-          />
-          <h1
-            class="w-[350px] h-[103px] font-popins text-[23px] font-semibold mt-3"
-          >
-            Mengapa Reuse Penting dalam Upaya Mendukung Lingkungan & Komunitas
-          </h1>
-          <p class="w-[375px] h-[125px] font-popins text-[20px] font-normal">
-            Dalam upaya menjaga lingkungan dan membangun masyarakat yang
-            berkelanjutan, konsep reuse atau penggunaan kembali memiliki peran
-            yang sangat penting.
-          </p>
-          <img src="../assets/garis-blog.svg" alt="" class="mt-10" />
-          <p
-            class="w-[248px] font-popins text-[13px] font-normal text-center py-5 ml-16"
-          >
-            Nanda Ardika • 14 Mei 2024
-          </p>
-          <a href="{{ route('blog-detail3') }}"
-            ><button
-              class="border py-[14px] px-[98px] gap-[10px] justify-center items-center rounded-3xl ml-14 bg-biru text-white"
-            >
-              Read More
-            </button></a
-          >
-        </div>
-      </div>
-      <!-- END Article 3 -->
-
-      <!-- Article 4 -->
-      <div class="flex justify-center items-center gap-24 mt-20">
-        <div class="">
-          <img
-            src="../assets/blog-artikel4.svg"
-            alt=""
-            class="w-[377px] h-[444px]"
-          />
-          <h1
-            class="w-[379px] h-[103px] font-popins text-[23px] font-semibold mt-3"
-          >
-            Kemiskinan Struktural, Pendidikan, dan Indonesia Emas 2045
-          </h1>
-          <p class="w-[375px] h-[125px] font-popins text-[20px] font-normal">
-            BPJS Ketenagakerjaan siap memberikan pengobatan dan perawatan hingga
-            sembuh kepada tenaga medis yang terdaftar sebagai peserta.
-          </p>
-          <img src="../assets/garis-blog.svg" alt="" class="mt-10" />
-          <p
-            class="w-[248px] font-popins text-[13px] font-normal text-center py-5 ml-16"
-          >
-            Waode N • 05 November 2023
-          </p>
-          <a href="{{ route('blog-detail4') }}"
-            ><button
-              class="border py-[14px] px-[98px] gap-[10px] justify-center items-center rounded-3xl ml-14 bg-biru text-white"
-            >
-              Read More
-            </button></a
-          >
-        </div>
-        <!-- END Article 4 -->
-
-        <!-- Article 5 -->
-        <div class="">
-          <img
-            src="../assets/blog-artikel5.svg"
-            alt=""
-            class="w-[377px] h-[444px]"
-          />
-          <h1
-            class="w-[379px] h-[103px] font-popins text-[27px] font-semibold mt-3"
-          >
-            Kemiskinan dan Kerusakan Lingkungan
-          </h1>
-          <p class="w-[375px] h-[125px] font-popins text-[20px] font-normal">
-            Jumlah penderita TBC di Kabupaten Majalengka mencapai 5.000 kasus
-            hingga Oktober 2022. Lalumenjadi permasalahan serius bagi penanganan
-            penyakit TBC.
-          </p>
-          <img src="../assets/garis-blog.svg" alt="" class="mt-10" />
-          <p
-            class="w-[248px] font-popins text-[13px] font-normal text-center py-5 ml-16"
-          >
-            Aditya Sudarmadi • 22 Januari 2020
-          </p>
-          <a href="{{ route('blog-detail5') }}"
-            ><button
-              class="border py-[14px] px-[98px] gap-[10px] justify-center items-center rounded-3xl ml-14 bg-biru text-white"
-            >
-              Read More
-            </button></a
-          >
-        </div>
-        <!-- END Article 5 -->
-
-        <!-- Article 6 -->
-        <div class="">
-          <img
-            src="../assets/blog-artikel6.svg"
-            alt=""
-            class="w-[377px] h-[444px]"
-          />
-          <h1
-            class="w-[379px] h-[103px] font-popins text-[27px] font-semibold mt-3"
-          >
-            Mengelola Sampah dengan Metode 3R
-          </h1>
-          <p class="w-[375px] h-[125px] font-popins text-[20px] font-normal">
-            Reduce (mengurangi), Reuse (menggunakan ulang), Recycle (mendaur
-            ulang) atau lebih dikenal sebagai 3R merupakan istilah sederhana
-          </p>
-          <img src="../assets/garis-blog.svg" alt="" class="mt-10" />
-          <p
-            class="w-[248px] font-popins text-[13px] font-normal text-center py-5 ml-16"
-          >
-            Dinas Kesehatan • 01 Agustus 2023
-          </p>
-          <a href=""
-            ><button
-              class="border py-[14px] px-[98px] gap-[10px] justify-center items-center rounded-3xl ml-14 bg-biru text-white"
-            >
-              Read More
-            </button></a
-          >
-        </div>
-      </div>
-      <a href="{{ route('blog') }}" class="flex justify-center items-center text-center mt-28"
-        ><button
-          class="border py-[14px] px-[98px] flex justify-center items-center gap-[10px] rounded-3xl bg-hijau text-white text-center text-[16px] font-semibold"
-        >
-          Loading More
-        </button></a
-      >
     </section>
-    <!-- END Article 6 -->
     <!-- END TOP ARTICLES -->
 
     <!-- LatePost & PopularPost -->

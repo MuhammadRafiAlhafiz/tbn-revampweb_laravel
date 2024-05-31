@@ -10,12 +10,10 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="shortcut icon" href="{{ asset('assets/logo-1.svg') }}" type="image/svg+xml" />
-    
   </head>
   <body class="font-popins">
-
     <!-- NAVBAR -->
-    <nav class="bg-biru py-5 flex items-center justify-between w-full">
+    <nav class="bg-biru flex items-center justify-between w-full py-3">
       <a href="{{ route('event') }}">
         <img
           src="../assets/panah.svg"
@@ -29,125 +27,112 @@
     </nav>
     <!-- END NAVBAR -->
 
-    <!-- Banner event 4 -->
-    <section>
+    <!-- Banner event 1 -->
+    <section>    
       <div class="flex flex-col justify-center items-center mt-10">
         <img
           class="w-[500px] h-[750px]"
-          src="../assets/banner-event4.svg"
+          src="<?= $_ENV['APP_URL_BACKEND'] ?>/images/<?= $program->poster ?>"
           alt=""
         />
         <span class="w-[1000px] mt-10">
           <a href="{{ route('event') }}"><p class="text-hijau py-5 font-nunito text-[20px] font-normal">
-            [ About Conference ]
+            [ {{$program->place}} ]
           </p></a>
           <h1 class="font-popins text-[34px] font-semibold">
-            Transformational Sales Conference 2023
+           {{$program->name}}
           </h1>
           <div class="w-[967px] h-[250px] font-popins text-[21px] font-semibold">
           <p class="py-1">
-            "Don't find customers for your products, find products for your
-            customers." ~ Seth Godin
+            {{$program->desc}}
           </p>
 
-          <p class="py-5"
-            >It's crucial to adapt to the changing sales landscape in the
-            digital age, and Seth Godin's quote emphasizes the importance of
-            customer-centricity. Digital transformation has indeed shifted the
-            focus towards online sales, but it's essential to remember that
-            serving the customer's needs remains paramount.</p
-          >
-          <span>
-            The Transformational Sales Conference sounds like a great
-            opportunity to explore the evolving world of sales and learn how to
-            provide excellent service in both online and offline contexts.</span
-          >
-        </span>
+        
       </div>
-      </div>
+      </div>      
     </section>
-    <!-- END Banner Event 4 -->
+    <!-- END Banner Event 1 -->
 
     <!-- THE SPEAKER -->
-    <img class="flex justify-center w-full mt-20" src="../assets/event-detailspeaker4.svg" alt="">
+    <img class="flex justify-center w-full mt-20" src="../assets/event-detailspeaker3.svg" alt="">
     <!-- END THE SPEAKER -->
 
-   <!-- CARD PRICE -->
-   <section class="mt-20 bg-background py-16 mx-52 rounded-3xl">
-    <div class="flex justify-center gap-14">
+    <!-- CARD PRICE -->
+    <section class="mt-20 bg-background py-16 mx-52 rounded-3xl">
+        <div class="flex justify-center gap-14">
+            <div class="bg-biru w-[292px] h-[550px] flex flex-col rounded-3xl">
+            <span class="ml-6">
+              <span class="flex items-center mt-24 gap-2">
+                <img class="w-[26px] h-[24px]" src="../assets/icon-cardevent.svg" alt="">
+                <h1 class="font-popins text-[27px] font-semibold text-white">Free</h1>
+              </span>
+              <p class="text-white">............................................</p>
+              <p class="mt-2 text-[14px] font-normal text-white">1 Conference Day</p>
+              <p class="text-white">............................................</p>
+              <p class="mt-2 text-[14px] font-normal text-white">e-Certificate</p>
+            </span>
+          <span class="mt-52 justify-center items-center text-center">
+            <a class="border-transparent py-3 px-10 rounded-xl bg-hijau text-white" href="{{ route('register') }}"><button>Choose plan</button></a>
+          </span>
+          </div>
+
+          <div class="bg-biru w-[292px] h-[550px] flex flex-col rounded-3xl">
+            <span class="ml-6">
+              <span class="flex items-center mt-16 gap-2">
+                <img class="w-[26px] h-[24px]" src="../assets/icon-cardevent.svg" alt="">
+                <h1 class="font-popins text-[27px] font-semibold text-white">Regular</h1>
+              </span>
+              <p class="font-popins text-[20px] font-semibold text-white">RP.1.500.000<span class="text-[15px] font-normal">/1 Person</span></p>
+              <p class="text-white">............................................</p>
+              <p class="mt-2 text-[14px] font-normal text-white">1 Conference Day</p>
+              <p class="text-white">............................................</p>
+              <p class="mt-2 text-[14px] font-normal text-white">Free Coffee & Lunch</p>
+              <p class="text-white">............................................</p>
+              <p class="mt-2 text-[14px] font-normal text-white">Goodie Bags</p>
+              <p class="text-white">............................................</p>
+              <p class="mt-2 text-[14px] font-normal text-white">e-Certificate</p>
+            </span>
+          <span class="mt-24 justify-center items-center text-center">
+
+            <a class="border-transparent py-3 px-10 rounded-xl bg-hijau text-white" href="{{ route('register') }}"><button>Choose plan</button></a>
+          </span>
+          </div>
+
+
         <div class="bg-biru w-[292px] h-[550px] flex flex-col rounded-3xl">
-        <span class="ml-6">
-          <span class="flex items-center mt-24 gap-2">
-            <img class="w-[26px] h-[24px]" src="../assets/icon-cardevent.svg" alt="">
-            <h1 class="font-popins text-[27px] font-semibold text-white">Free</h1>
+          <span class="flex justify-end mr-5 py-3">
+            <a class="border-transparent py-2 px-2 rounded-xl bg-purple text-foundationgreen font-popins text-[10px] font-extrabold" href=""><button>MOST POPULAR</button></a>
           </span>
-          <p class="text-white">............................................</p>
-          <p class="mt-2 text-[14px] font-normal text-white">1 Conference Day</p>
-          <p class="text-white">............................................</p>
-          <p class="mt-2 text-[14px] font-normal text-white">e-Certificate</p>
-        </span>
-      <span class="mt-52 justify-center items-center text-center">
-        <a class="border-transparent py-3 px-10 rounded-xl bg-hijau text-white" href="{{ route('register') }}"><button>Choose plan</button></a>
-      </span>
-      </div>
-
-      <div class="bg-biru w-[292px] h-[550px] flex flex-col rounded-3xl">
-        <span class="ml-6">
-          <span class="flex items-center mt-16 gap-2">
-            <img class="w-[26px] h-[24px]" src="../assets/icon-cardevent.svg" alt="">
-            <h1 class="font-popins text-[27px] font-semibold text-white">Regular</h1>
+            <span class="ml-6">
+              <span class="flex items-center gap-2">
+                <img class="w-[26px] h-[24px]" src="../assets/icon-cardevent.svg" alt="">
+                <h1 class="font-popins text-[27px] font-semibold text-white">Group Table</h1>
+              </span>
+              <p class="font-popins text-[20px] font-semibold text-white">RP.6.000.000<span class="text-[15px] font-normal">/1 Groub</span></p>
+              <p class="text-white">............................................</p>
+              <p class="mt-2 text-[14px] font-normal text-white">1 Reserved Table for 6 Persons</p>
+              <p class="text-white">............................................</p>
+              <p class="mt-2 text-[14px] font-normal text-white">1 Conference Day</p>
+              <p class="text-white">............................................</p>
+              <p class="mt-2 text-[14px] font-normal text-white">Free Coffee & Lunch</p>
+              <p class="text-white">............................................</p>
+              <p class="mt-2 text-[14px] font-normal text-white">Goodie Bags</p>
+              <p class="text-white">............................................</p>
+              <p class="mt-2 text-[14px] font-normal text-white">e-Certificate</p>
+            </span>
+          <span class="mt-12 justify-center items-center text-center">
+            <a class="border-transparent py-3 px-10 rounded-xl bg-hijau text-white" href="{{ route('register') }}"><button>Choose plan</button></a>
           </span>
-          <p class="font-popins text-[20px] font-semibold text-white">RP.1.500.000<span class="text-[15px] font-normal">/1 Person</span></p>
-          <p class="text-white">............................................</p>
-          <p class="mt-2 text-[14px] font-normal text-white">1 Conference Day</p>
-          <p class="text-white">............................................</p>
-          <p class="mt-2 text-[14px] font-normal text-white">Free Coffee & Lunch</p>
-          <p class="text-white">............................................</p>
-          <p class="mt-2 text-[14px] font-normal text-white">Goodie Bags</p>
-          <p class="text-white">............................................</p>
-          <p class="mt-2 text-[14px] font-normal text-white">e-Certificate</p>
-        </span>
-      <span class="mt-24 justify-center items-center text-center">
-
-        <a class="border-transparent py-3 px-10 rounded-xl bg-hijau text-white" href="{{ route('register') }}"><button>Choose plan</button></a>
-      </span>
-      </div>
-
-
-    <div class="bg-biru w-[292px] h-[550px] flex flex-col rounded-3xl">
-      <span class="flex justify-end mr-5 py-3">
-        <a class="border-transparent py-2 px-2 rounded-xl bg-purple text-foundationgreen font-popins text-[10px] font-extrabold" href=""><button>MOST POPULAR</button></a>
-      </span>
-        <span class="ml-6">
-          <span class="flex items-center gap-2">
-            <img class="w-[26px] h-[24px]" src="../assets/icon-cardevent.svg" alt="">
-            <h1 class="font-popins text-[27px] font-semibold text-white">Group Table</h1>
-          </span>
-          <p class="font-popins text-[20px] font-semibold text-white">RP.6.000.000<span class="text-[15px] font-normal">/1 Groub</span></p>
-          <p class="text-white">............................................</p>
-          <p class="mt-2 text-[14px] font-normal text-white">1 Reserved Table for 6 Persons</p>
-          <p class="text-white">............................................</p>
-          <p class="mt-2 text-[14px] font-normal text-white">1 Conference Day</p>
-          <p class="text-white">............................................</p>
-          <p class="mt-2 text-[14px] font-normal text-white">Free Coffee & Lunch</p>
-          <p class="text-white">............................................</p>
-          <p class="mt-2 text-[14px] font-normal text-white">Goodie Bags</p>
-          <p class="text-white">............................................</p>
-          <p class="mt-2 text-[14px] font-normal text-white">e-Certificate</p>
-        </span>
-      <span class="mt-12 justify-center items-center text-center">
-        <a class="border-transparent py-3 px-10 rounded-xl bg-hijau text-white" href="{{ route('register') }}"><button>Choose plan</button></a>
-      </span>
-      </div>
-    </div>
-</section>
-<!-- END Card Price -->
+          </div>
+        </div>
+    </section>
+    <!-- END Card Price -->
 
     <!-- Venue Information -->
-    <section class="bg-hijau p-20 mt-10">
-        <h1 class="text-[36px] font-bold text-center">Venue Information</h1>
+    <section class="bg-hijau  px-32">
+        <h1 class="text-[36px] mt-16 pt-16 font-bold text-center">Venue Information</h1>
         <p class="text-center text-[18px] font-normal">Where this conference will be held</p>
-        <div class="mt-20 flex justify-center text-center gap-14">
+        <div class=" flex justify-center text-center gap-14">
             <div class="flex flex-col justify-center items-center">
               <img class="w-[28px] h-[48px]" src="../assets/event-iconlocation.svg" alt="">
               <p class="text-[24px] font-bold mt-5 py-2 ">Location</p>
@@ -167,11 +152,12 @@
                 Jakarta Sabang or Ashley Jakarta Sabang.</p>
             </div>
         </div>
+
     </section>
     <!-- END Venue Information -->
 
-    <!-- FOOTER -->
-    <section class="bg-white mt-10">
+   <!-- FOOTER -->
+   <section class="bg-white mt-10">
       <div class="flex flex-col md:flex-row md:p-10 justify-between">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
           <img src="../assets/logo footer.svg" alt="" />
@@ -254,6 +240,5 @@
       </div>
     </section>
     <!-- END FOOTR -->
-    
   </body>
 </html>

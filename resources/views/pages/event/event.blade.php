@@ -129,7 +129,7 @@
           customers." ~ Seth Godin
         </h1>
         <span class="flex mr-24 gap-10 mt-10">
-          <a href="{{ route('event-detail1') }}"
+          <a href="/"
             ><p
               class="w-[139px] p-[10px] border rounded-2xl flex items-center justify-center bg-hijau text-[17px] font-popins font-normal"
             >
@@ -191,119 +191,43 @@
 
     <!-- LIST EVENT -->
     <!-- EVENT 1 -->
-    <div id="event" class="max-w-[1200px] min-h-[600px] flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[110px] mx-auto px-4 text-white mt-5">
-        <img src="../assets/banner-event1.svg" alt="" class="w-[300px] h-[375px]" />
-        <div class="flex flex-col items-center md:items-start text-center md:text-left">
-          <p class="text-hijau">[About Conference]</p>
-          <h1 class="text-[20px] md:text-[24px] font-semibold font-popins text-black">
-            Transformational Sales Conference 2023
-          </h1>
-          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[875px] mt-8 ml-2 md:ml-0">
-            "Don't find customers for your products, find products for your customers." ~ Seth Godin
-          </p>
-          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[875px] mt-8 ml-2 md:ml-0">
-            It's crucial to adapt to the changing sales landscape in the digital age, and Seth Godin's quote emphasizes the importance of customer-centricity. Digital transformation has indeed shifted the focus towards online sales, but it's essential to remember that serving the customer's needs remains paramount. The Transformational Sales Conference sounds like a great opportunity to explore the evolving world of sales and learn how to provide excellent service in both online and offline contexts.
-          </p>
-          <div class="flex flex-col md:flex-row gap-[20px] md:gap-[31px] text-white mt-10 justify-center md:justify-start items-center">
-            <a href="{{ route('event-detail1') }}">
-              <p class="border bg-hijau py-[10px] px-[20px] rounded-xl text-center">
-                Read More
+
+   <!-- resources/views/pages/event/event.blade.php -->
+<div id="event" class=" max-w-[1200px] min-h-[600px] flex flex-col gap-[30px] mx-auto px-4 text-white mt-32">
+  @foreach ($programs as $program)
+      <div class="flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[110px]">
+        <img src="<?= $_ENV['APP_URL_BACKEND'] ?>/images/<?= $program->poster ?>" alt="<?= $program->name ?>" class="w-[300px] h-[375px] " style="object-fit: cover;" />
+
+          <div class="flex flex-col items-center md:items-start text-center md:text-left">
+              <p class="text-hijau">[{{$program->place}}]</p>
+              <h1 class="text-[20px] md:text-[24px] font-semibold font-popins text-black">
+                  {{$program->name}}
+              </h1>
+              <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[875px] mt-8 ml-2 md:ml-0">
+                  {{$program->desc}}
               </p>
-            </a>
-            <a href="{{ route('event-feedback1') }}">
-              <p class="border bg-biru py-[10px] px-[20px] rounded-2xl text-center">
-                Add Your Feedback
-              </p>
-            </a>
+              <div class="flex flex-col md:flex-row gap-[20px] md:gap-[31px] text-white mt-10 justify-center md:justify-start items-center">
+                  <a href="{{ route('event-detail', ['id' => $program->id]) }}">
+                      <p class="border bg-hijau py-[10px] px-[20px] rounded-xl text-center">
+                          Read More
+                      </p>
+                  </a>
+                  <a href="{{ route('event-feedback', ['id' => $program->id]) }}">
+                      <p class="border bg-biru py-[10px] px-[20px] rounded-2xl text-center">
+                          Add Your Feedback
+                      </p>
+                  </a>
+              </div>
           </div>
-        </div>
       </div>
       <hr class="w-full border-t-4 border-gray-300">
+  @endforeach
+</div>
+
+     
       <!-- END EVENT 1 -->
 
-      <!-- EVENT 2 -->
-      <div class="max-w-[1200px] min-h-[600px] flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[110px] mx-auto px-4 text-white">
-        <img src="../assets/banner-event2.svg" alt="" class="w-[300px] h-[375px]" />
-        <div class="flex flex-col items-center md:items-start text-center md:text-left">
-          <p class="text-hijau">[About Conference]</p>
-          <h1 class="text-[20px] md:text-[24px] font-semibold font-popins text-black">
-            TBN Asia Conference 2023 </h1>
-          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[875px] mt-8 ml-2 md:ml-0">
-            In a world once plagued by environmental degradation and societal inequalities, a transformative movement emerged, igniting a path towards a sustainable future. This narrative follows the lives of four individuals whose passion and dedication became catalysts for change in agriculture, education, green technology, digital innovation, and art and culture.
 
-            Together, they embarked on a shared mission to harmonize humanity's relationship with the planet and shape a brighter tomorrow.
-            
-                      </p>
-          <div class="flex flex-col md:flex-row gap-[20px] md:gap-[31px] text-white mt-10 justify-center md:justify-start items-center">
-            <a href="{{ route('event-detail2') }}">
-              <p class="border bg-hijau py-[10px] px-[20px] rounded-xl text-center">
-                Read More
-              </p>
-            </a>
-            <a href="{{ route('event-feedback2') }}">
-              <p class="border bg-biru py-[10px] px-[20px] rounded-2xl text-center">
-                Add Your Feedback
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <hr class="w-full border-t-4 border-gray-300">
-      <!-- END EVENT 2 -->
-
-      <!-- EVENT 3 -->
-      <div class="max-w-[1200px] min-h-[600px] flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[110px] mx-auto px-4 text-white">
-        <img src="../assets/banner-event3.svg" alt="" class="w-[300px] h-[375px]" />
-        <div class="flex flex-col items-center md:items-start text-center md:text-left">
-          <p class="text-hijau">[About Conference]</p>
-          <h1 class="text-[20px] md:text-[24px] font-semibold font-popins text-black">
-            The Future for Social Enterprises          </h1>
-          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[875px] mt-8 ml-2 md:ml-0">
-            Traditionally, social enterprises have relied on market rate investments or pure philanthropic grants for their funding. With the development of innovative financial models like blended finance and risk adjusted market rate return impact investing, rich opportunities are generated for social enterprises to tap into the huge potential of private markets for capital. These opportunities can be catalytic for the social enterprise, and enable them to scale. Social enterprises are entrepreneurial organizations that blend social benefits and financial returns. 
-
-            So the capital that they rely on should also sit on a continuum that ranges from philanthropy to market-return impact investing. This is the emerging capital market for social enterprises, and the future.          </p>
-          <div class="flex flex-col md:flex-row gap-[20px] md:gap-[31px] text-white mt-10 justify-center md:justify-start items-center">
-            <a href="{{ route('event-detail3') }}">
-              <p class="border bg-hijau py-[10px] px-[20px] rounded-xl text-center">
-                Read More
-              </p>
-            </a>
-            <a href="{{ route('event-feedback3') }}">
-              <p class="border bg-biru py-[10px] px-[20px] rounded-2xl text-center">
-                Add Your Feedback
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <hr class="w-full border-t-4 border-gray-300">
-      <!-- END EVENT 3 -->
-
-      <!-- EVENT 4 -->
-      <div class="max-w-[1200px] min-h-[600px] flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[110px] mx-auto px-4 text-white">
-        <img src="../assets/banner-event4.svg" alt="" class="w-[300px] h-[375px]" />
-        <div class="flex flex-col items-center md:items-start text-center md:text-left">
-          <p class="text-hijau">[About Conference]</p>
-          <h1 class="text-[20px] md:text-[24px] font-semibold font-popins text-black">
-            The Future of Education          </h1>
-          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[875px] mt-8 ml-2 md:ml-0">
-            Universities have a unique role to play as catalysts for innovation among the next generation. But how do we turn “courses and classrooms” into powerful spaces for shaping the leaders of tomorrow? This panel will explore strategies for youth development, and how universities can foster a culture of entrepreneurship and creativity that drives innovation. Special emphasis will be given to how these can be applied to Indonesian institutions seeking to innovate.          </p>
-          <div class="flex flex-col md:flex-row gap-[20px] md:gap-[31px] text-white mt-10 justify-center md:justify-start items-center">
-            <a href="{{ route('event-detail4') }}">
-              <p class="border bg-hijau py-[10px] px-[20px] rounded-xl text-center">
-                Read More
-              </p>
-            </a>
-            <a href="{{ route('event-feedback4') }}">
-              <p class="border bg-biru py-[10px] px-[20px] rounded-2xl text-center">
-                Add Your Feedback
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <hr class="w-full border-t-4 border-gray-300">
-      <!-- END EVENT 4 -->
     <!-- END LIST EVENT -->
 
     <!-- LETS GROW Together -->
