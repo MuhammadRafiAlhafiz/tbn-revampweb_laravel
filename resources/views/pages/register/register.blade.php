@@ -17,72 +17,65 @@
     <nav class="bg-biru py-5 flex items-center justify-between w-full">
       <a href="{{ route('event') }}"
         ><img
-          src="../assets/panah.svg"
+          src="/assets/panah.svg"
           alt=""
           class="md:ml-20 w-[50px] h-[30px]"
       /></a>
       <a href="{{ route('home') }}"
-        ><img src="../assets/logo nav.svg" alt="" class="md:mr-20"
+        ><img src="/assets/logo nav.svg" alt="" class="md:mr-20"
       /></a>
     </nav>
     <!-- END NAVBAR -->
 
     <!-- FORM REGIS -->
+
+      @csrf 
     <section class="md:ml-80">
       <h1
         class="md:w-[800px] h-[40px] font-nunito ml-10 text-[30px] md:text-[42px] font-extrabold md:ml-72 py-5"
       >
         Form Registrasi Event
-      </h1>
+      </h1>    <form method="POST" action="{{ route('register.post') }}">
       <div class="mt-16">
-        <label
-          for="full_name"
-          class="w-[400px] font-popins text-[17px] font-normal"
-          >Full Name</label
-        >
-        <input
-          type="text"
-          id="full_name"
-          name="full_name"
-          placeholder="Full Name"
-          class="border flex w-full md:w-[1077px] h-[50px] rounded-xl px-3"
-        />
+        <label for="name" class="w-[400px] font-popins text-[17px] font-normal">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Full Name" class="border flex w-full md:w-[1077px] h-[50px] rounded-xl px-3" required>
+        
         <div class="py-3">
           <label
-            for="Email"
+            for="email"
             class="w-[400px] font-popins text-[17px] font-normal"
             >Email</label
           >
           <input
             type="text"
-            id="Email"
-            name="Email"
-            placeholder="Email"
+            id="email"
+            name="email"
+            placeholder="email"
             class="border flex w-full md:w-[1077px] h-[50px] rounded-xl px-3"
           />
         </div>
         <label
-          for="Phone_Number"
+          for="telp"
           class="w-[400px] font-popins text-[17px] font-normal"
           >Phone Number</label
         >
         <input
           type="text"
-          id="Phone_Number"
-          name="phone_number"
-          placeholder="Phone Number"
+          id="telp"
+          name="telp"
+          placeholder="Nomor Telephon"
           class="border flex w-full md:w-[1077px] h-[50px] rounded-xl px-3"
         />
         <div class="py-3">
           <label
-            for="Afiliasi"
+            for="afiliate"
             class="w-[400px] font-popins text-[17px] font-normal"
             >Afiliasi</label
           >
           <input
             type="text"
-            id="Afiliasi"
-            name="Afiliasi"
+            id="afiliate"
+            name="afiliate"
             placeholder="Afiliasi"
             class="border flex w-full md:w-[1077px] h-[50px] rounded-xl px-3"
           />
@@ -94,7 +87,7 @@
           >
             State
           </label>
-          <select
+          <select name="ticket_id"
             class="block appearance-none w-full md:w-[1077px] bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 rounded-xl leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="grid-state"
           >
@@ -106,14 +99,14 @@
         </div>
         <div class="mt-5">
           <label
-            for="Catatan"
+            for="notes"
             class="w-[400px] font-popins text-[17px] font-normal"
             >Catatan</label
           >
           <input
             type="text"
-            id="Catatan"
-            name="Catatan"
+            id="notes"
+            name="notes"
             placeholder="Tambahkan Catatan"
             class="border flex w-full md:w-[1080px] h-[50px] rounded-xl px-3"
           />
@@ -128,22 +121,18 @@
           />
           <p>Agree with all this, continue registration</p>
         </div>
-        <a href="{{ route('payment') }}" class="ml-20 md:ml-96"
-          ><button
-            class="font-nunito text-white border rounded-2xl w-[204px] h-[60px] p-[10px] bg-hijau"
-          >
-            Submit
-          </button></a
+      <button type="submit" class="font-nunito text-white border rounded-2xl w-[204px] h-[60px] p-[10px] bg-hijau ml-20 md:ml-96">Submit</button>
         >
-      </div>
+      </div>   </form>
     </section>
+ 
     <!-- END FORM REGIS -->
     
     <!-- FOOTER -->
     <section class="bg-white mt-10">
       <div class="flex flex-col md:flex-row md:p-10 justify-between">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
-          <img src="../assets/logo footer.svg" alt="" />
+          <img src="/assets/logo footer.svg" alt="" />
           <p
             class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins"
           >
@@ -191,21 +180,21 @@
           </h1>
           <div class="flex gap-3 md:gap-[20px] py-5">
             <a href="https://www.instagram.com/tbn.indonesia/"
-              ><img src="../assets/nav-instagram.svg" alt=""
+              ><img src="/assets/nav-instagram.svg" alt=""
             /></a>
             <a href="https://www.youtube.com/@tbnindonesia902"
-              ><img src="../assets/nav-youtube.svg" alt=""
+              ><img src="/assets/nav-youtube.svg" alt=""
             /></a>
-            <a href="https://wa.me/+6282310001908"><img src="../assets/nav-whatsapp.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-gmail.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-link.svg" alt="" /></a>
+            <a href="https://wa.me/+6282310001908"><img src="/assets/nav-whatsapp.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-gmail.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-link.svg" alt="" /></a>
           </div>
           <h1 class="font-popins font-semibold text-[21px] md:text-lg">
             Hubungi Kami
           </h1>
           <div class="flex gap-1 mt-2">
             <img
-              src="../assets/icon email.svg"
+              src="/assets/icon email.svg"
               class="font-popins font-normal text-[17px]"
               alt=""
             />

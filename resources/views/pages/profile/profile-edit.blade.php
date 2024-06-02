@@ -15,7 +15,7 @@
     <!-- NAVBAR -->
     <div class="py-5 flex items-center justify-between w-full px-20 bg-white">
       <a href="{{ route('profile') }}" class="flex items-center">
-        <img src="../assets/panah-hitam.svg" alt="Back" class="w-[30px] h-[30px]">
+        <img src="/assets/panah-hitam.svg" alt="Back" class="w-[30px] h-[30px]">
       </a>
       <p class="font-poppins text-[27px] font-semibold mr-10">Edit Profile</p>
       <div></div>
@@ -24,7 +24,7 @@
 
     <!-- Edit Profile -->
     <section class="flex flex-col justify-center items-center mt-3">
-      <img src="../assets/logo-profile.svg" alt="" class="w-[200px] h-[200px]"/>
+      <img src="/assets/logo-profile.svg" alt="" class="w-[200px] h-[200px]"/>
       <a href=""
         ><button
           class="font-popins text-[17px] font-normal border  mt-5 p-2 rounded-xl"
@@ -88,7 +88,7 @@
 
         <dialog id="my_modal_1" class="modal">
             <div class="modal-box bg-background flex flex-col justify-center items-center">
-                <img src="../assets/icon-alert.svg" alt="Alert Icon">
+                <img src="/assets/icon-alert.svg" alt="Alert Icon">
                 <p class="py-10 font-popins text-[22px] font-normal">Are You Sure Want to Change Your Profile?</p>
                 <div class="modal-action">
                     <form method="dialog" class="flex justify-center items-center gap-10">
@@ -102,7 +102,7 @@
 
     <dialog id="confirmation_modal" class="modal">
         <div class="modal-box bg-background flex flex-col justify-center items-center">
-            <img src="../assets/ceklis-editprofile.svg" alt="Checkmark Icon" class="w-12 h-12">
+            <img src="/assets/ceklis-editprofile.svg" alt="Checkmark Icon" class="w-12 h-12">
             <p class="py-10 font-popins text-[22px] font-normal">Profile successfully changed</p>
             <a href="{{ route('profile') }}"><button class="btn bg-green-600 w-[108px] rounded-[36px] text-white" onclick="document.getElementById('confirmation_modal').close()">Done</button></a>
         </div>

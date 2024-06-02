@@ -4,25 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>REVAMP TBN</title>
-    <link rel="stylesheet" href="../dist/tailwind.css" />
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="shortcut icon" href="../assets/logo 1.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/logo 1.svg" type="image/x-icon" />
   </head>
   <body class="font-popins">
     <!-- NAVBAR -->
     <nav class="bg-biru py-5 flex items-center justify-between w-full">
       <a href="../src/event.html">
         <img
-          src="../assets/panah.svg"
+          src="/assets/panah.svg"
           alt="Panah"
           class="md:ml-20 w-[50px] h-[30px]"
         />
       </a>
       <a href="../src/home.html">
-        <img src="../assets/logo nav.svg" alt="Logo" class="md:mr-20" />
+        <img src="/assets/logo nav.svg" alt="Logo" class="md:mr-20" />
       </a>
     </nav>
     <!-- END NAVBAR -->
@@ -32,7 +32,7 @@
       <div class="flex flex-col justify-center items-center mt-10">
         <img
           class="w-[500px] h-[750px]"
-          src="../assets/banner-event4.svg"
+          src="/assets/banner-event4.svg"
           alt=""
         />
         <span class="w-[1000px] mt-10">
@@ -75,16 +75,16 @@
         <div class="flex gap-5">
           <img
             class="w-[43px] h-[43px]"
-            src="../assets/event-feedbackcostumer1.svg"
+            src="/assets/event-feedbackcostumer1.svg"
             alt="Feedback Customer 1"
           />
           <div class="flex-col mt-2">
             <div class="flex w-[23px] h-[23px]">
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
             </div>
             <p class="w-[570px] h-[60px] text-[17px] font-normal py-2">
               This conference opened my eyes to the latest sales strategies and
@@ -102,16 +102,16 @@
         <div class="flex gap-5 mt-5">
           <img
             class="w-[43px] h-[43px]"
-            src="../assets/event-feedbackcostumer2.svg"
+            src="/assets/event-feedbackcostumer2.svg"
             alt="Feedback Customer 2"
           />
           <div class="flex-col mt-2">
             <div class="flex w-[23px] h-[23px]">
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
             </div>
             <p class="w-[570px] h-[60px] text-[17px] font-normal py-2">
               The sessions were packed with valuable and relevant information. I
@@ -129,16 +129,16 @@
         <div class="flex gap-5 mt-5">
           <img
             class="w-[43px] h-[43px]"
-            src="../assets/event-feedbackcostumer3.svg"
+            src="/assets/event-feedbackcostumer3.svg"
             alt="Feedback Customer 3"
           />
           <div class="flex-col mt-2">
             <div class="flex w-[23px] h-[23px]">
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackgraystar.svg" alt="Gray Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackgraystar.svg" alt="Gray Star" />
             </div>
             <p class="w-[570px] h-[60px] text-[17px] font-normal py-2">
               The Transformational Sales Conference 2023 provided practical
@@ -155,7 +155,7 @@
         <hr class="w-[700px] border-t-3 border-gray-300 mt-2" />
         <a href="feedback-event1.html">
           <div class="flex gap-2 mt-5">
-            <img src="../assets/event-feedbackrefresh.svg" alt="Refresh" />
+            <img src="/assets/event-feedbackrefresh.svg" alt="Refresh" />
             <p class="text-[11px] font-bold text-gray-500">LOAD MORE REVIEWS</p>
           </div>
         </a>
@@ -177,7 +177,7 @@
             how was your experience?
           </p>
           <div class="flex space-x-2 mb-6">
-            <img src="../assets/event-starRating.svg" alt="Star Rating" />
+            <img src="/assets/event-starRating.svg" alt="Star Rating" />
           </div>
         </div>
         <form>
@@ -199,7 +199,7 @@
               type="button"
               class="flex items-center py-2 px-20 border-2 rounded-2xl text-gray-600 focus:outline-none"
             >
-              <img src="../assets/event-cameraphoto.svg" alt="Add Photo" />
+              <img src="/assets/event-cameraphoto.svg" alt="Add Photo" />
               Add Photo
             </button>
           </div>
@@ -220,7 +220,7 @@
       <div class="text-center flex justify-center items-center mt-20">
         <div>
           <img
-            src="../assets/event-payment-sucsses payment.svg"
+            src="/assets/event-payment-sucsses payment.svg"
             alt="Check Mark"
             class="w-[300px] h-[350px]"
           />
@@ -246,7 +246,7 @@
     <footer class="bg-white mt-10">
       <div class="flex flex-col md:flex-row md:p-10 justify-between">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
-          <img src="../assets/logo footer.svg" alt="Logo Footer" />
+          <img src="/assets/logo footer.svg" alt="Logo Footer" />
           <p
             class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins"
           >
@@ -287,23 +287,23 @@
           </h1>
           <div class="flex gap-3 md:gap-[20px] py-5">
             <a href="https://www.instagram.com/tbn.indonesia/"
-              ><img src="../assets/nav-instagram.svg" alt="Instagram"
+              ><img src="/assets/nav-instagram.svg" alt="Instagram"
             /></a>
             <a href="https://www.youtube.com/@tbnindonesia902"
-              ><img src="../assets/nav-youtube.svg" alt="YouTube"
+              ><img src="/assets/nav-youtube.svg" alt="YouTube"
             /></a>
             <a href="#"
-              ><img src="../assets/nav-whatsapp.svg" alt="WhatsApp"
+              ><img src="/assets/nav-whatsapp.svg" alt="WhatsApp"
             /></a>
-            <a href="#"><img src="../assets/nav-gmail.svg" alt="Gmail" /></a>
-            <a href="#"><img src="../assets/nav-link.svg" alt="LinkedIn" /></a>
+            <a href="#"><img src="/assets/nav-gmail.svg" alt="Gmail" /></a>
+            <a href="#"><img src="/assets/nav-link.svg" alt="LinkedIn" /></a>
           </div>
           <h1 class="font-popins font-semibold text-[21px] md:text-lg">
             Hubungi Kami
           </h1>
           <div class="flex gap-1 mt-2">
             <img
-              src="../assets/icon email.svg"
+              src="/assets/icon email.svg"
               class="font-popins font-normal text-[17px]"
               alt="Email"
             />

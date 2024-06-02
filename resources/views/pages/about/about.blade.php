@@ -28,7 +28,7 @@
         <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
           <a href="{{ route('home') }}"
             ><img
-              src="../assets/logo nav.svg"
+              src="/assets/logo nav.svg"
               alt="logo navbar"
               class="w-[100px]"
           /></a>
@@ -49,7 +49,7 @@
         </div>
         <button class="w-16 lg:hidden block buttonToogle">
           <img
-            src="../assets/menu1.svg"
+            src="/assets/menu1.svg"
             alt="Menu"
             class="w-[100px] md:w-0 h-"
           />
@@ -123,7 +123,7 @@
     <!-- Background About -->
     <section
       id="home"
-      class="bg-[url('../assets/bg-about.svg')] bg-cover bg-center relative md:w-full md:h-[750px]"
+      class="bg-[url('/assets/bg-about.svg')] bg-cover bg-center relative md:w-full md:h-[750px]"
     >
       <div
         class="max-w-[1200px] min-h-[100vh] flex flex-col justify-center mx-auto px-4 text-white"
@@ -131,7 +131,7 @@
         <h1
           class="text-[30px] md:text-[56px] font-bold leading-tight md:leading-normal flex gap-5"
         >
-          <img src="../assets/Garis.svg" alt="" />
+          <img src="/assets/Garis.svg" alt="" />
 
           WHO WE ARE
         </h1>
@@ -159,7 +159,7 @@
 
     <!-- WE ARE -->
     <img
-      src="../assets/we are about.svg"
+      src="/assets/we are about.svg"
       alt=""
       class="flex justify-center items-center w-full h-[500px] md:h-[800px]"
     />
@@ -169,7 +169,7 @@
     <section class="bg-hijau">
       <div class="md:w-[1200px] w-[300px] mx-auto p-16">
         <div class="flex text-[57px] font-extrabold text-biru gap-5">
-          <img src="../assets/GarisBiru.svg" alt="" />
+          <img src="/assets/GarisBiru.svg" alt="" />
           <h1>Our History</h1>
         </div>
         <div class="flex md:flex-col gap-5 w-full">
@@ -205,7 +205,7 @@
 
     <!-- WE BELIEVE IN -->
     <img
-      src="../assets/we believe in.svg"
+      src="/assets/we believe in.svg"
       alt=""
       class="w-full h-[500px] md:h-[800px]"
     />
@@ -214,7 +214,7 @@
     <!-- Our Unique Approach -->
     <section class="bg-biru p-6 md:p-24">
       <span class="flex gap-2 mx-20">
-        <img src="../assets/GarisHijau.svg" alt="" />
+        <img src="/assets/GarisHijau.svg" alt="" />
         <h1
           class="text-hijau text-[36px] md:text-[57px] font-popins font-extrabold"
         >
@@ -224,22 +224,22 @@
     <div class="flex justify-between">
       <div class="mt-28">
         <span class="flex items-center gap-5">
-          <img src="../assets/about3.svg" alt="" class="w-[200px] h-[200px] border p-3 md:p-5 rounded-full bg-hijau">
+          <img src="/assets/about3.svg" alt="" class="w-[200px] h-[200px] border p-3 md:p-5 rounded-full bg-hijau">
           <p class="w-[339px] h-[71px] font-popins text-[21px] font-semibold text-white"><span class="text-hijau">Faith-based but not faith-biased</span> commitment to religious and cultural pluralism</p>
         </span>
         <span class="flex items-center mt-24 gap-5">
-          <img src="../assets/about4.svg" alt="" class="w-[200px] h-[200px] border p-3 md:p-5 rounded-full bg-hijau">
+          <img src="/assets/about4.svg" alt="" class="w-[200px] h-[200px] border p-3 md:p-5 rounded-full bg-hijau">
           <p class="w-[339px] h-[71px] font-popins text-[21px] font-semibold text-white"><span class="text-hijau">Independent local chapters</span> with autonomous volunteer boards but a member of the larger TBN family</p>
         </span>     
         </div>
         <div class=" mb-20">
           <span class="flex items-center">
             <p class="w-[339px] h-[71px] font-popins text-[21px] font-semibold text-white"><span class="text-hijau">Character-based</span> entrepreneurship training & support</p>
-            <img src="../assets/about1.svg" alt="" class="w-[200px] h-[200px] border p-3 md:p-5 rounded-full bg-hijau">
+            <img src="/assets/about1.svg" alt="" class="w-[200px] h-[200px] border p-3 md:p-5 rounded-full bg-hijau">
           </span>
           <span class="flex items-center mt-20">
             <p class="w-[339px] h-[71px] font-popins text-[21px] font-semibold text-white"><span class="text-hijau">Sector agnostic</span> with key focus on poverty alleviation</p>
-            <img src="../assets/about2.svg" alt="" class="w-[200px] h-[200px] border p-3 md:p-5 rounded-full bg-hijau">
+            <img src="/assets/about2.svg" alt="" class="w-[200px] h-[200px] border p-3 md:p-5 rounded-full bg-hijau">
           </span>     
           </div>
       </div>
@@ -249,14 +249,14 @@
     <!-- The Challenge -->
     <section
     id="home"
-    class="bg-[url('../assets/bg-challange.svg')] bg-cover bg-center relative py-36 h-[1200px]"
+    class="bg-[url('/assets/bg-challange.svg')] bg-cover bg-center relative py-36 h-[1200px]"
   >
   <div
         class="max-w-full min-h-[700px] flex flex-col justify-center mx-auto px-4 text-white "
       >
       <div class="flex justify-between items-center mx-20">
         <span>
-          <img src="../assets/3 bola.svg" alt="" class="items-center">
+          <img src="/assets/3 bola.svg" alt="" class="items-center">
         </span>
         <span>
           <h1 class="font-popins text-[50px] font-extrabold">The Challenge We Face</h1>
@@ -274,7 +274,7 @@
    <section class="bg-white mt-10">
       <div class="flex flex-col md:flex-row md:p-10 justify-between">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
-          <img src="../assets/logo footer.svg" alt="" />
+          <img src="/assets/logo footer.svg" alt="" />
           <p
             class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins"
           >
@@ -322,21 +322,21 @@
           </h1>
           <div class="flex gap-3 md:gap-[20px] py-5">
             <a href="https://www.instagram.com/tbn.indonesia/"
-              ><img src="../assets/nav-instagram.svg" alt=""
+              ><img src="/assets/nav-instagram.svg" alt=""
             /></a>
             <a href="https://www.youtube.com/@tbnindonesia902"
-              ><img src="../assets/nav-youtube.svg" alt=""
+              ><img src="/assets/nav-youtube.svg" alt=""
             /></a>
-            <a href=""><img src="../assets/nav-whatsapp.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-gmail.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-link.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-whatsapp.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-gmail.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-link.svg" alt="" /></a>
           </div>
           <h1 class="font-popins font-semibold text-[21px] md:text-lg">
             Hubungi Kami
           </h1>
           <div class="flex gap-1 mt-2">
             <img
-              src="../assets/icon email.svg"
+              src="/assets/icon email.svg"
               class="font-popins font-normal text-[17px]"
               alt=""
             />
@@ -355,7 +355,7 @@
     </section>
 
     <!-- END FOOTR -->
-    <script src="../js/humberger.js"></script>
-    <script src="../js/scrollnavbar.js"></script>
+    <script src="/js/humberger.js"></script>
+    <script src="/js/scrollnavbar.js"></script>
   </body>
 </html>

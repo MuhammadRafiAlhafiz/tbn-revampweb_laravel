@@ -22,7 +22,7 @@
         <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
           <a href="{{ route('home') }}"
             ><img
-              src="../assets/logo nav.svg"
+              src="/assets/logo nav.svg"
               alt="logo navbar"
               class="w-[100px]"
           /></a>
@@ -43,7 +43,7 @@
         </div>
         <button class="w-16 lg:hidden block buttonToogle">
           <img
-            src="../assets/menu1.svg"
+            src="/assets/menu1.svg"
             alt="Menu"
             class="w-[100px] md:w-0 h-"
           />
@@ -117,7 +117,7 @@
     <!-- Background Blog -->
     <section
       id="home"
-      class="bg-[url('../assets/bg-blog.svg')] bg-cover bg-center relative md:w-full h-[500px] md:h-[550px]"
+      class="bg-[url('/assets/bg-blog.svg')] bg-cover bg-center relative md:w-full h-[500px] md:h-[550px]"
     >
       <div
         class="max-w-[1200px] min-h-[100vh] flex flex-col justify-center mx-auto text-white items-center"
@@ -130,7 +130,7 @@
                   class="w-[390px] md:w-full h-[200px] md:h-[350px] overflow-hidden bg-white rounded-2xl shadow-md"
                 >
                   <img
-                    src="../assets/banner-blog1.svg"
+                    src="/assets/banner-blog1.svg"
                     alt="Image 1"
                     class="object-cover w-[1106px] h-[519px]"
                   />
@@ -141,7 +141,7 @@
                   class="w-[390px] md:w-full h-[200px] md:h-[350px] overflow-hidden bg-white rounded-lg shadow-md"
                 >
                   <img
-                    src="../assets/banner-blog2.svg"
+                    src="/assets/banner-blog2.svg"
                     alt="Image 2"
                     class="object-cover w-[1106px] h-[519px]"
                   />
@@ -152,7 +152,7 @@
                   class="w-[390px] md:w-full h-[200px] md:h-[350px] overflow-hidden bg-white rounded-lg shadow-md"
                 >
                   <img
-                    src="../assets/banner-blog3.svg"
+                    src="/assets/banner-blog3.svg"
                     alt="Image 3"
                     class="object-cover w-[1106px] h-[519px]"
                   />
@@ -183,16 +183,16 @@
           >
             {{$blog->title}}
           </h1>
-          <p class="w-[375px] mt-5 font-popins text-[20px] font-normal">
+          <p class="line-clamp-3 w-[375px] mt-5 font-popins text-[20px] font-normal">
             {{$blog->content}}
           </p>
-          <img src="../assets/garis-blog.svg" alt="" class="mt-10" />
+          <img src="/assets/garis-blog.svg" alt="" class="mt-10" />
           <p
             class="w-[248px] font-popins text-[13px] font-normal text-center py-5 ml-16"
           >
             Update By • {{$blog->updated_at}}
           </p>
-          <a href="{{ route('blog-detail') }}"
+          <a href="{{ route('blog-detail', ['id' => $blog->id]) }}"
             ><button
               class="border py-[14px] px-[98px] gap-[10px] justify-center items-center rounded-3xl ml-14 bg-biru text-white"
             >
@@ -218,16 +218,16 @@
           <h1 class="font-popins text-[34px] font-semibold">Latest Post</h1>
           <span class="flex">
             <img
-              src="../assets/garis-blog-latepost.svg"
+              src="/assets/garis-blog-latepost.svg"
               alt=""
               class="w-[242px] h-[4px]"
             />
-            <img src="../assets/garis-blog-gray.svg" alt="" />
+            <img src="/assets/garis-blog-gray.svg" alt="" />
           </span>
           <div class="flex mt-10 gap-32">
             <span>
               <img
-                src="../assets/latepos1.svg"
+                src="/assets/latepos1.svg"
                 alt=""
                 class="w-[220px] h-[260px]"
               />
@@ -247,7 +247,7 @@
             </span>
             <span>
               <img
-                src="../assets/latepos2.svg"
+                src="/assets/latepos2.svg"
                 alt=""
                 class="w-[220px] h-[260px]"
               />
@@ -274,19 +274,19 @@
           <h1 class="font-popins text-[34px] font-semibold">Populer Post</h1>
           <span class="flex">
             <img
-              src="../assets/garis-blog-latepost.svg"
+              src="/assets/garis-blog-latepost.svg"
               alt=""
               class="w-[162px] h-[4px]"
             />
             <img
-              src="../assets/garis-blog-gray-popular.svg"
+              src="/assets/garis-blog-gray-popular.svg"
               alt=""
               class="w-[213px] h-[4px]"
             />
           </span>
           <span class="flex mt-7 gap-5">
             <img
-              src="../assets/blog-popular1.svg"
+              src="/assets/blog-popular1.svg"
               alt=""
               class="w-[155px] h-[93px]"
             />
@@ -298,7 +298,7 @@
           </span>
           <span class="flex py-10 gap-5">
             <img
-              src="../assets/blog-popular2.svg"
+              src="/assets/blog-popular2.svg"
               alt=""
               class="w-[155px] h-[93px]"
             />
@@ -310,7 +310,7 @@
           </span>
           <span class="flex gap-5">
             <img
-              src="../assets/blog-popular3.svg"
+              src="/assets/blog-popular3.svg"
               alt=""
               class="w-[155px] h-[93px]"
             />
@@ -329,7 +329,7 @@
    <section class="bg-white mt-10">
       <div class="flex flex-col md:flex-row md:p-10 justify-between">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
-          <img src="../assets/logo footer.svg" alt="" />
+          <img src="/assets/logo footer.svg" alt="" />
           <p
             class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins"
           >
@@ -377,21 +377,21 @@
           </h1>
           <div class="flex gap-3 md:gap-[20px] py-5">
             <a href="https://www.instagram.com/tbn.indonesia/"
-              ><img src="../assets/nav-instagram.svg" alt=""
+              ><img src="/assets/nav-instagram.svg" alt=""
             /></a>
             <a href="https://www.youtube.com/@tbnindonesia902"
-              ><img src="../assets/nav-youtube.svg" alt=""
+              ><img src="/assets/nav-youtube.svg" alt=""
             /></a>
-            <a href=""><img src="../assets/nav-whatsapp.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-gmail.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-link.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-whatsapp.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-gmail.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-link.svg" alt="" /></a>
           </div>
           <h1 class="font-popins font-semibold text-[21px] md:text-lg">
             Hubungi Kami
           </h1>
           <div class="flex gap-1 mt-2">
             <img
-              src="../assets/icon email.svg"
+              src="/assets/icon email.svg"
               class="font-popins font-normal text-[17px]"
               alt=""
             />
@@ -411,8 +411,8 @@
 
     <!-- END FOOTR -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="../js/scrollnavbar.js"></script>
-    <script src="../js/humberger.js"></script>
-    <script src="../js/caraousel.js"></script>
+    <script src="/js/scrollnavbar.js"></script>
+    <script src="/js/humberger.js"></script>
+    <script src="/js/caraousel.js"></script>
   </body>
 </html>

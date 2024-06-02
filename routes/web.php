@@ -5,6 +5,8 @@ use App\Models\Program;
 use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Auth\RegisterController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,9 +36,16 @@ Route::get('/blog', function () {
     return view('pages.blog.blog', ['blogs' => $blogs]);
 })->name('blog');
 
-Route::get('/blog-detail', function () {
-    return view('pages.blog.blog-detail');
+Route::get('/blog-detail/{id}', function ($id) {
+    $blogdetail = Blog::findOrFail($id);
+    return view('pages.blog.blog-detail', ['blogdetail' => $blogdetail]);
 })->name('blog-detail');
+
+
+Route::get('/event-detail/{id}', function ($id) {
+    $program = Program::findOrFail($id);
+    return view('pages.event.event-detail', ['program' => $program]);
+})->name('event-detail');
 
 
 Route::get('/contact', function () {
@@ -92,9 +101,8 @@ Route::get('/forgot-password', function () {
     return view('pages.profile.forgot-password');
 })->name('forgot-password');
 
-Route::get('/register', function () {
-    return view('pages.register.register');
-})->name('register');
+Route::get('user', [RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('user', [RegisterController::class, 'register']);
 
 Route::get('/payment', function () {
     return view('pages.register.payment');

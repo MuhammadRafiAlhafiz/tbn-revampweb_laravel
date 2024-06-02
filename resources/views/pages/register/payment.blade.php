@@ -28,13 +28,13 @@
     <nav class="bg-biru py-5 flex items-center justify-between w-full">
       <a href="{{ route('event') }}">
         <img
-          src="../assets/panah.svg"
+          src="/assets/panah.svg"
           alt="Panah Kembali"
           class="md:ml-20 w-[50px] h-[30px]"
         />
       </a>
       <a href="{{ route('home') }}">
-        <img src="../assets/logo nav.svg" alt="Logo TBN" class="md:mr-20" />
+        <img src="/assets/logo nav.svg" alt="Logo TBN" class="md:mr-20" />
       </a>
     </nav>
     <!-- END NAVBAR -->
@@ -96,7 +96,7 @@
             <span class="flex items-center gap-3 ml-4">
               <img
                 class="w-[57px] h-[45px]"
-                src="../assets/event-payment-whatsapp.svg"
+                src="/assets/event-payment-whatsapp.svg"
                 alt="Pembayaran melalui WhatsApp"
               />
               <a href="https://wa.me/+6282310001908">
@@ -113,7 +113,7 @@
       <div class="mt-10 border rounded-[20px]">
         <img
           class="mt-5 mx-auto w-[200px] h-[250px] rounded-xl"
-          src="../assets/banner-event4.svg"
+          src="/assets/banner-event4.svg"
           alt="Banner Acara The Future Of Education"
         />
         <div class="mt-5 mx-10">
@@ -122,10 +122,10 @@
           </h2>
           <div class="flex items-center gap-2 mt-2">
             <span class="w-[30px]">
-              <img src="../assets/event-payment-date.svg" alt="Tanggal" />
+              <img src="/assets/event-payment-date.svg" alt="Tanggal" />
               <img
                 class="py-2"
-                src="../assets/event-payment-location.svg"
+                src="/assets/event-payment-location.svg"
                 alt="Lokasi"
               />
             </span>
@@ -184,7 +184,7 @@
       <div class="text-center flex justify-center items-center mt-20">
         <div>
           <img
-            src="../assets/event-payment-sucsses payment.svg"
+            src="/assets/event-payment-sucsses payment.svg"
             alt="Check Mark"
             class="w-[300px] h-[350px]"
           />

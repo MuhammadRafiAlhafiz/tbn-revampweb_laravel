@@ -20,7 +20,7 @@
         <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
           <a href="{{ route('home') }}"
             ><img
-              src="../assets/logo nav.svg"
+              src="/assets/logo nav.svg"
               alt="logo navbar"
               class="w-[100px]"
           /></a>
@@ -41,7 +41,7 @@
         </div>
         <button class="w-16 lg:hidden block buttonToogle">
           <img
-            src="../assets/menu1.svg"
+            src="/assets/menu1.svg"
             alt="Menu"
             class="w-[100px] md:w-0 h-"
           />
@@ -113,7 +113,7 @@
     <!-- END NAVBAR -->
 
     <!-- Background Blog -->
-    <section id="home" class="bg-[url('../assets/bg-blog.svg')] bg-cover bg-center relative md:w-full h-[500px] md:h-[550px]">
+    <section id="home" class="bg-[url('/assets/bg-blog.svg')] bg-cover bg-center relative md:w-full h-[500px] md:h-[550px]">
         <div class="max-w-[1200px] min-h-[100vh] flex flex-col justify-center mx-auto text-white items-center">
             <div class="w-full md:w-[1000px] mt-[375px]">
                 <div class="swiper-container"></div>
@@ -127,37 +127,31 @@
         <div class="flex justify-between mx-32 mt-20">
             <div class="">
                 <div class="">
+                  @foreach ($blogdetail as $blogdetails )
+                    
+              
                     <span class="text-[22px]">
-              Kemiskinan merupakan suatu topik yang terus dan selalu diperbincangkan sampai saat ini, sebagai indikator tolak ukur mengenai bagaimana tingkat kesejahteraan dan kemakmuran pada kehidupan masyarakat di suatu negara.  Fenomena
-              mengenai kemiskinan hampir  terjadi  diseluruh negara  yang sedang berkembang. pada kategori negara  maju, kemiskinan hampir tidak terlihat atau jumlahnya sedikit dikarenakan sumber daya manusia di negara tersebut telah
-              berkembang dan memiliki kehidupan yang sejahtera. dampak yang akan diperoleh dari kemiskinan tersebut ialah Kondisi yang menyebabkan menurunnya kualitas sumber daya manusia sehingga produktivitas dan pendapatan yang didapatkan
-              rendah.  Oleh karena itu dengan penghasilan yang rendah, masyarakatnya tidak mampu mengakses sarana pendidikan, kesehatan,  dan nutrisi secara baik sehingga menyebabkan kualitas sumberdaya manusia dari aspek intelektual dan
-              fisik rendah serta akibatnya produktivitas juga rendah. Pembangunan ekonomi yang dilaksanakan sejak kemerdekaan secara signifikan telah berhasil mengurangi jumlah dan proporsi penduduk miskin di Indonesia.  Apapun penyebabnya
-              persoalan kemiskinan tetap menjadi masalah besar yang perlu mendapat perhatian dan tindakan langsung melalui pelaksanaan program-program baik yang bersifat penyelamatan, pemberdayaan maupun fasilitatif. <br />
-              <br />
-              Faktor-faktor yang terjadi pada negara berkembang seperti Indonesia mengenai kemiskinan adalah Laju pertumbuhan penduduk yang tidak  diimbangi dengan jumlah lapangan kerja yang tersedia, Angka pengangguran yang tinggi, Tingkat
-              Pendidikan pada masyarakat yang masih tergolong rendah, kurangnya rasa perhatian pemerintahan  terhadap masyarakat dan pendapatan per kapita yang masih
-              rendah.
-            </span>
+                      {{$blogdetail->content}}
+            </span>    @endforeach
                 </div>
             </div>
             <div class="flex-column flex-col mx-32">
                 <div>
                     <h1 class="font-popins text-[30px] font-semibold">Populer Post</h1>
                     <span class="flex">
-              <img src="../assets/garis-blog-latepost.svg" alt="" class="w-[162px] h-[4px]" />
-              <img src="../assets/garis-blog-gray-popular.svg" alt="" class="w-[213px] h-[4px]" />
+              <img src="/assets/garis-blog-latepost.svg" alt="" class="w-[162px] h-[4px]" />
+              <img src="/assets/garis-blog-gray-popular.svg" alt="" class="w-[213px] h-[4px]" />
             </span>
                     <span class="flex mt-7 gap-5">
-              <img src="../assets/blog-popular1.svg" alt="" class="w-[155px] h-[93px]" />
+              <img src="/assets/blog-popular1.svg" alt="" class="w-[155px] h-[93px]" />
               <h1 class="w-[193px] h-[83px] font-popins text-[21px] font-semibold">TBN Alliance: Kolaborasi Penting?</h1>
             </span>
                     <span class="flex py-10 gap-5">
-              <img src="../assets/blog-popular2.svg" alt="" class="w-[155px] h-[93px]" />
+              <img src="/assets/blog-popular2.svg" alt="" class="w-[155px] h-[93px]" />
               <h1 class="w-[193px] h-[83px] font-popins text-[21px] font-semibold">kemiskinan dan Kerusakan Lingkungan</h1>
             </span>
                     <span class="flex gap-5">
-              <img src="../assets/blog-popular3.svg" alt="" class="w-[155px] h-[93px]" />
+              <img src="/assets/blog-popular3.svg" alt="" class="w-[155px] h-[93px]" />
               <h1 class="w-[193px] h-[83px] font-popins text-[21px] font-semibold">Mengelola Sampah dengan Metode 3R</h1>
             </span>
                 </div>
@@ -165,14 +159,14 @@
                 <div class="mt-10">
                     <h1 class="font-popins text-[34px] font-semibold">Latest Post</h1>
                     <span class="flex">
-              <img src="../assets/garis-blog-latepost.svg" alt="" class="w-[242px] h-[4px]" />
-              <img src="../assets/garis-blog-gray.svg" alt="" />
+              <img src="/assets/garis-blog-latepost.svg" alt="" class="w-[242px] h-[4px]" />
+              <img src="/assets/garis-blog-gray.svg" alt="" />
             </span>
                     <div class="">
                         <div class="mt-10 gap-32">
                             <span>
                   <div class="flex">
-                    <img src="../assets/latepos1.svg" alt="" class="w-[220px] h-[260px]" />
+                    <img src="/assets/latepos1.svg" alt="" class="w-[220px] h-[260px]" />
                     <span class="ms-32 flex-col justify-end align-middle">
                       <h1 class="w-[220px] h-[72px] font-popins text-[18px] font-semibold">TBN Alliance : Kolaborasi Penting?</h1>
                       <p class="w-[220px] h-[72px] font-popins text-[16px] font-normal">Meningkatkan Dampak Sosial dengan TBN Alliance</p>
@@ -183,7 +177,7 @@
                         </span>
                         <span>
                   <div class="flex mt-10">
-                    <img src="../assets/latepos2.svg" alt="" class="w-[220px] h-[260px]" />
+                    <img src="/assets/latepos2.svg" alt="" class="w-[220px] h-[260px]" />
                     <span class="">
                       <h1 class="w-[220px] h-[72px] font-popins text-[18px] font-semibold">Menuntaskan Kemiskinan Melalui Pertanian</h1>
                       <p class="w-[220px] h-[72px] font-popins text-[16px] font-normal mt-4">Upaya pemberantasan kemiskinan di Indonesia berada pada jalur tepat.</p>
@@ -201,7 +195,7 @@
     </section>
     <!-- Content Image -->
     <div class="mt-10 flex align-middle justify-center">
-        <img src="../assets/img-faktor-blog-detail.svg" class="w-[606px] h-[400px]" alt="img" />
+        <img src="/assets/img-faktor-blog-detail.svg" class="w-[606px] h-[400px]" alt="img" />
 
     </div>
     <div class="mx-32 mt-10">
@@ -227,7 +221,7 @@
    <section class="bg-white mt-10">
       <div class="flex flex-col md:flex-row md:p-10 justify-between">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
-          <img src="../assets/logo footer.svg" alt="" />
+          <img src="/assets/logo footer.svg" alt="" />
           <p
             class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins"
           >
@@ -275,21 +269,21 @@
           </h1>
           <div class="flex gap-3 md:gap-[20px] py-5">
             <a href="https://www.instagram.com/tbn.indonesia/"
-              ><img src="../assets/nav-instagram.svg" alt=""
+              ><img src="/assets/nav-instagram.svg" alt=""
             /></a>
             <a href="https://www.youtube.com/@tbnindonesia902"
-              ><img src="../assets/nav-youtube.svg" alt=""
+              ><img src="/assets/nav-youtube.svg" alt=""
             /></a>
-            <a href=""><img src="../assets/nav-whatsapp.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-gmail.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-link.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-whatsapp.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-gmail.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-link.svg" alt="" /></a>
           </div>
           <h1 class="font-popins font-semibold text-[21px] md:text-lg">
             Hubungi Kami
           </h1>
           <div class="flex gap-1 mt-2">
             <img
-              src="../assets/icon email.svg"
+              src="/assets/icon email.svg"
               class="font-popins font-normal text-[17px]"
               alt=""
             />
@@ -309,9 +303,9 @@
 
     <!-- END FOOTR -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="../js/scrollnavbar.js"></script>
-    <script src="../js/humberger.js"></script>
-    <script src="../js/caraousel.js"></script>
+    <script src="/js/scrollnavbar.js"></script>
+    <script src="/js/humberger.js"></script>
+    <script src="/js/caraousel.js"></script>
 </body>
 
 </html>

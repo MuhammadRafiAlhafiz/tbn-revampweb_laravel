@@ -16,12 +16,12 @@
     <nav class="bg-biru py-5 flex items-center justify-between w-full">
       <a href="{{ route('home') }}"
         ><img
-          src="../assets/panah.svg"
+          src="/assets/panah.svg"
           alt=""
           class="md:ml-20 w-[50px] h-[30px]"
       /></a>
       <a href="{{ route('home') }}"
-        ><img src="../assets/logo nav.svg" alt="" class="md:mr-20"
+        ><img src="/assets/logo nav.svg" alt="" class="md:mr-20"
       /></a>
     </nav>
     <!-- END NAVBAR -->
@@ -31,7 +31,7 @@
       <div class="flex justify-center items-center mt-20 gap-20">
         <span>
           <img
-            src="../assets/foto-profile.svg"
+            src="/assets/foto-profile.svg"
             alt=""
             class="w-[350px] h-[509px]"
           />
@@ -53,7 +53,7 @@
             ><span
               class="flex mt-10 border p-2 border-hijau rounded-xl gap-5 items-center justify-center"
             >
-              <p><img src="../assets/icon-editprofile.svg" alt="" /></p>
+              <p><img src="/assets/icon-editprofile.svg" alt="" /></p>
               <p class="text-hijau font-popins text-[21px] font-semibold">
                 Edit Profile
               </p>

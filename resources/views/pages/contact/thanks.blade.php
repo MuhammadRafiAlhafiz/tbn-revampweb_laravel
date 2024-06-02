@@ -20,7 +20,7 @@
         <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
           <a href="{{ route('home') }}"
             ><img
-              src="../assets/logo nav.svg"
+              src="/assets/logo nav.svg"
               alt="logo navbar"
               class="w-[100px]"
           /></a>
@@ -41,7 +41,7 @@
         </div>
         <button class="w-16 lg:hidden block buttonToogle">
           <img
-            src="../assets/menu1.svg"
+            src="/assets/menu1.svg"
             alt="Menu"
             class="w-[100px] md:w-0 h-"
           />
@@ -115,7 +115,7 @@
     <!-- Content Thankyu -->
     <section
       id="home"
-      class="bg-[url('../assets/bg-eventNow.svg')] bg-cover bg-center relative"
+      class="bg-[url('/assets/bg-eventNow.svg')] bg-cover bg-center relative"
     >
       <div
         class="max-w-[1200px] min-h-[100vh] flex flex-col justify-center mx-auto px-4 text-black items-center"
@@ -126,7 +126,7 @@
           Thank You!
         </h1>
         <img
-          src="../assets/thankyu.logo.svg"
+          src="/assets/thankyu.logo.svg"
           alt=""
           class="w-[600px] h-[350px]"
         />
@@ -141,19 +141,19 @@
         </p>
         <span class="flex gap-5 mt-2">
           <a href="https://www.instagram.com/tbn.indonesia/"
-            ><img src="../assets/nav-instagram.svg" alt="instagram"
+            ><img src="/assets/nav-instagram.svg" alt="instagram"
           /></a>
           <a href="https://www.youtube.com/@tbnindonesia902"
-            ><img src="../assets/nav-youtube.svg" alt="youtube"
+            ><img src="/assets/nav-youtube.svg" alt="youtube"
           /></a>
           <a href="https://wa.me/+6282310001908"
-            ><img src="../assets/nav-whatsapp.svg" alt="nav-whatsapp"
+            ><img src="/assets/nav-whatsapp.svg" alt="nav-whatsapp"
           /></a>
           <a href="https://gmail.com"
-            ><img src="../assets/nav-gmail.svg" alt="nav-gmail"
+            ><img src="/assets/nav-gmail.svg" alt="nav-gmail"
           /></a>
           <a href="https://www.linkedin.com/in/tbn-indonesia-210705251/"
-            ><img src="../assets/nav-link.svg" alt="linkedin"
+            ><img src="/assets/nav-link.svg" alt="linkedin"
           /></a>
         </span>
       </div>
@@ -164,7 +164,7 @@
     <section class="bg-white mt-10">
       <div class="flex flex-col md:flex-row md:p-10 justify-between">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
-          <img src="../assets/logo footer.svg" alt="" />
+          <img src="/assets/logo footer.svg" alt="" />
           <p
             class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins"
           >
@@ -212,21 +212,21 @@
           </h1>
           <div class="flex gap-3 md:gap-[20px] py-5">
             <a href="https://www.instagram.com/tbn.indonesia/"
-              ><img src="../assets/nav-instagram.svg" alt=""
+              ><img src="/assets/nav-instagram.svg" alt=""
             /></a>
             <a href="https://www.youtube.com/@tbnindonesia902"
-              ><img src="../assets/nav-youtube.svg" alt=""
+              ><img src="/assets/nav-youtube.svg" alt=""
             /></a>
-            <a href="https://wa.me/+6282310001908"><img src="../assets/nav-whatsapp.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-gmail.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-link.svg" alt="" /></a>
+            <a href="https://wa.me/+6282310001908"><img src="/assets/nav-whatsapp.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-gmail.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-link.svg" alt="" /></a>
           </div>
           <h1 class="font-popins font-semibold text-[21px] md:text-lg">
             Hubungi Kami
           </h1>
           <div class="flex gap-1 mt-2">
             <img
-              src="../assets/icon email.svg"
+              src="/assets/icon email.svg"
               class="font-popins font-normal text-[17px]"
               alt=""
             />

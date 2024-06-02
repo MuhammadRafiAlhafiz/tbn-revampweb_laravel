@@ -20,7 +20,7 @@
         <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
           <a href="{{ route('home') }}"
             ><img
-              src="../assets/logo nav.svg"
+              src="/assets/logo nav.svg"
               alt="logo navbar"
               class="w-[100px]"
           /></a>
@@ -41,7 +41,7 @@
         </div>
         <button class="w-16 lg:hidden block buttonToogle">
           <img
-            src="../assets/menu1.svg"
+            src="/assets/menu1.svg"
             alt="Menu"
             class="w-[100px] md:w-0 h-"
           />
@@ -116,7 +116,7 @@
     <!-- content banner -->
     <section
       id="home"
-      class="bg-[url('../assets/bg-event.svg')] bg-cover bg-center relative w-full h-[600px]"
+      class="bg-[url('/assets/bg-event.svg')] bg-cover bg-center relative w-full h-[600px]"
     >
       <div
         class="max-w-[1200px] min-h-[100vh] flex flex-col justify-center items-end mx-auto px-4 text-white"
@@ -158,7 +158,7 @@
                   placeholder="Business"
                   class="mt-1 block w-full md:w-[280px] p-3 shadow-sm sm:text-sm  rounded-md bg-transparent font-popins text-[21px] font-semibold"
                 />
-                <img src="../assets/garis-event.svg" alt="">
+                <img src="/assets/garis-event.svg" alt="">
             </span>
             <span>
                 <h1 class="font-popins text-[17px] font-normal">Place</h1>
@@ -169,7 +169,7 @@
                   placeholder="Place"
                   class="mt-1 block w-full md:w-[280px] p-3 shadow-sm sm:text-sm  rounded-md bg-transparent font-popins text-[21px] font-semibold"
                 />
-                <img src="../assets/garis-event.svg" alt="">
+                <img src="/assets/garis-event.svg" alt="">
             </span>
 
             <span>
@@ -181,7 +181,7 @@
                 <option>Tuesday</option>
                 <option>Wednesday</option>
                 </select>
-                <img src="../assets/garis-event.svg" alt="">
+                <img src="/assets/garis-event.svg" alt="">
             </span>
         </div>
       </div>
@@ -238,7 +238,7 @@
     </p>
   </span>
     <div class="flex justify-center items-center mb-20 gap-[120px]">
-        <img src="../assets/Event-Grow.svg" alt="" class="w-[500px] h-[598px]">
+        <img src="/assets/Event-Grow.svg" alt="" class="w-[500px] h-[598px]">
         <div class="text-white w-[470px] h-[440px]">
             <h1 class="font-popins text-[27px] font-semibold ">Get yourself Inspired</h1>
             <p class="font-popins text-[17px] font-normal py-5">In a world full of possibilities, "Get Yourself Inspired" is a call to embrace life's beauty and your own potential. Imagine waking up each day with purpose, ready to tackle new challenges and explore uncharted territories. Whether pursuing personal goals, creating innovative solutions, or finding joy in everyday moments, inspiration unlocks the door to greatness. By seeking experiences that move you and surrounding yourself with uplifting people, you can transform your life and those around you.</p>
@@ -261,7 +261,7 @@
               class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-2xl shadow-md"
             >
               <img
-                src="../assets/partner1.svg"
+                src="/assets/partner1.svg"
                 alt="Image 1"
                 class="w-[1167px] h-[110px]"
               />
@@ -272,7 +272,7 @@
               class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
             >
               <img
-                src="../assets/partner2.svg"
+                src="/assets/partner2.svg"
                 alt="Image 2"
                 class="w-[1167px] h-[110px]"
               />
@@ -283,7 +283,7 @@
               class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
             >
               <img
-                src="../assets/partner3.svg"
+                src="/assets/partner3.svg"
                 alt="Image 3"
                 class="w-[1167px] h-[110px]"
               />
@@ -294,7 +294,7 @@
               class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
             >
               <img
-                src="../assets/partner4.svg"
+                src="/assets/partner4.svg"
                 alt="Image 4"
                 class="w-[1167px] h-[110px]"
               />
@@ -305,7 +305,7 @@
               class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
             >
               <img
-                src="../assets/partner5.svg"
+                src="/assets/partner5.svg"
                 alt="Image 5"
                 class="w-[1167px] h-[110px]"
               />
@@ -316,7 +316,7 @@
               class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
             >
               <img
-                src="../assets/partner6.svg"
+                src="/assets/partner6.svg"
                 alt="Image 6"
                 class="w-[1167px] h-[110px]"
               />
@@ -330,30 +330,30 @@
 
   <!-- TESTIMONI EVENT -->
   <div class="flex flex-col justify-center items-center">
-    <img src="../assets/event-Rectangle.svg" alt="" class="w-[119px] h-[14px] mt-20">
+    <img src="/assets/event-Rectangle.svg" alt="" class="w-[119px] h-[14px] mt-20">
     <h1 class="font-popins text-[56px] font-bold text-biru py-5">Testimoni Event</h1>
     
     <div class="relative w-full max-w-3xl mb-4 flex items-center">
         <!-- Navigation buttons -->
         <button id="prevBtn" class="bg-gray-200 px-4 py-2 rounded-full mr-2">
-            <img src="../assets/button-prev.svg" alt="">
+            <img src="/assets/button-prev.svg" alt="">
         </button>
 
         <!-- Slider main container -->
         <div class="relative flex-1">
             <div class="slide">
-                <img src="../assets/event-testimoni1.svg" alt="Image 1" class="w-full h-auto">
+                <img src="/assets/event-testimoni1.svg" alt="Image 1" class="w-full h-auto">
             </div>
             <div class="slide hidden">
-                <img src="../assets/event-testimoni2.svg" alt="Image 2" class="w-full h-auto">
+                <img src="/assets/event-testimoni2.svg" alt="Image 2" class="w-full h-auto">
             </div>
             <div class="slide hidden">
-                <img src="../assets/event-testimoni3.svg" alt="Image 3" class="w-full h-auto">
+                <img src="/assets/event-testimoni3.svg" alt="Image 3" class="w-full h-auto">
             </div>
         </div>
 
         <button id="nextBtn" class="bg-hijau px-4 py-2 rounded-full ml-2">
-            <img src="../assets/button-next.svg" alt="">
+            <img src="/assets/button-next.svg" alt="">
         </button>
     </div>
 </div>
@@ -363,7 +363,7 @@
     <section class="bg-white mt-10">
       <div class="flex flex-col md:flex-row md:p-10 justify-between">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
-          <img src="../assets/logo footer.svg" alt="" />
+          <img src="/assets/logo footer.svg" alt="" />
           <p
             class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins"
           >
@@ -411,21 +411,21 @@
           </h1>
           <div class="flex gap-3 md:gap-[20px] py-5">
             <a href="https://www.instagram.com/tbn.indonesia/"
-              ><img src="../assets/nav-instagram.svg" alt=""
+              ><img src="/assets/nav-instagram.svg" alt=""
             /></a>
             <a href="https://www.youtube.com/@tbnindonesia902"
-              ><img src="../assets/nav-youtube.svg" alt=""
+              ><img src="/assets/nav-youtube.svg" alt=""
             /></a>
-            <a href="https://wa.me/+6282310001908"><img src="../assets/nav-whatsapp.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-gmail.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-link.svg" alt="" /></a>
+            <a href="https://wa.me/+6282310001908"><img src="/assets/nav-whatsapp.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-gmail.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-link.svg" alt="" /></a>
           </div>
           <h1 class="font-popins font-semibold text-[21px] md:text-lg">
             Hubungi Kami
           </h1>
           <div class="flex gap-1 mt-2">
             <img
-              src="../assets/icon email.svg"
+              src="/assets/icon email.svg"
               class="font-popins font-normal text-[17px]"
               alt=""
             />
