@@ -198,24 +198,6 @@
         <img src="/assets/img-faktor-blog-detail.svg" class="w-[606px] h-[400px]" alt="img" />
 
     </div>
-    <div class="mx-32 mt-10">
-        <span class="text-[22px] ">
-      menurut data World Bank, Tercatat Indonesia berada menempati peringkat sembilan dalam daftar negara dengan jumlah orang miskin terbesar di dunia. Madagaskar menempati peringkat pertama sebagai negara dengan jumlah orang miskin
-      terbanyak. Disusul oleh Kongo, Monzambik, Nigeria, Tanzania, Bangladesh, Etiopia, India, Indonesia dan China Berdasarkan hasil Persentase dari Badan Pusat Statistik (BPS) mengenai Penduduk Miskin di Indonesia per Maret 2019 Sebesar
-      9,41 Persen. Persentase penduduk miskin pada Maret 2019 sebesar 9,41 persen, menurun 0,25 persen poin terhadap September 2018 dan menurun 0,41 persen poin terhadap Maret 2018. Jumlah penduduk miskin pada Maret 2019 sebesar 25,14
-      juta orang, menurun 0,53 juta orang terhadap September 2018 dan menurun 0,80 juta orang terhadap Maret 2018. Persentase penduduk miskin di daerah perkotaan pada September 2018 sebesar 6,89 persen, turun menjadi 6,69 persen pada
-      Maret 2019. Sementara persentase penduduk miskin di daerah perdesaan pada September 2018 sebesar 13,10 persen, turun menjadi 12,85 persen pada Maret 2019. Dibanding September 2018, jumlah penduduk miskin Maret 2019 di daerah
-      perkotaan turun sebanyak 136,5 ribu orang (dari 10,13 juta orang pada September 2018 menjadi 9,99 juta orang pada Maret 2019). Sementara itu, daerah perdesaan turun sebanyak 393,4 ribu orang (dari 15,54 juta orang pada September
-      2018 menjadi 15,15 juta orang pada Maret 2019). Garis Kemiskinan pada Maret 2019 tercatat sebesar Rp425.250,-/kapita/bulan dengan komposisi Garis Kemiskinan Makanan sebesar Rp313.232,- (73,66 persen) dan Garis Kemiskinan Bukan
-      Makanan sebesar Rp112.018,- (26,34 persen). Pada Maret 2019, secara rata-rata rumah tangga miskin di Indonesia memiliki 4,68 orang anggota rumah tangga. Dengan demikian, besarnya Garis Kemiskinan per rumah tangga miskin secara
-      rata-rata adalah sebesar Rp1.990.170,-/rumah tangga miskin/bulan. Ini membuktikan dari tahun ke tahun jumlah angka kemiskinan yang terjadi di Indonesia mengalami penurunan, semua tidak lepas dari peran penting dan campur tangan
-      pemerintah dalam mengatasi permasalahan kemiskinan dan meningkatkan sumber daya manusianya di Indonesia. beras Sejahtera, Kartu Indonesia Sehat dan bantuan non-tunai yang diberikan pemerintah dapat berkontribusi dengan baik pada
-      penurunan kemiskinan ini. Selain itu juga hal yang perlu diperhatikan untuk dapat mengurangi kemiskinan di negeri ini dengan memperluas lapangan pekerjaan bagi masyarakat, memberikan bantuan pendidikan gratis kepada masyarakat yang
-      tinggal jauh dipelosok dan putus sekolah. saat ini pemerintah telah mengadakan program bantuan pendidikan berupa wajib belajar sembilan tahun bagi masyarakat yang tidak mampu. dan yang terakhir Memberikan fasilitas yang memadai dan
-      subsidi gratis. peran pemerintah diharapkan membantu dalam memberi fasilitas yang merata di setiap wilayah. Pemberian fasilitas tersebut dapat diwujudkan dengan melengkapi sejumlah sarana dan prasarana yang dinilai kurang atau masih
-      belum cukup keberadaannya. Setelah fasilitas terpenuhi, diharapkan masyarakat dapat hidup dengan layak dan sejahtera serta permasalahan mengenai kemiskinan itu dapat diatasi dengan baik.
-    </span>
-    </div>
     <!-- End Content Image -->
    <!-- FOOTER -->
    <section class="bg-white mt-10">
@@ -290,6 +272,7 @@
             <a href="https://www.tbnalliance.org/">hello@tbnalliance.org</a>
           </div>
         </div>
+      </div>
       </div>
       <div class="bg-biru">
         <h1

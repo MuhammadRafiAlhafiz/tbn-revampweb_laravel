@@ -391,20 +391,78 @@
       <div class="w-full md:w-[800px]">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            @foreach ($partner as $partner )
-              
+            {{-- @foreach ($partner as $partner ) --}}
+
      
-            <div class="swiper-slide">
-              <div
-                class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-2xl shadow-md"
-              >
-                <img
-                  src="<?= $_ENV['APP_URL_BACKEND'] ?>/uploads/page/<?= $partner->image?>"
-                  alt="Image 1"
-                  class="w-[1167px] h-[110px]"
-                />
+            < class="swiper-slide">
+              <div class="swiper-slide">
+                <div
+                  class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-2xl shadow-md"
+                >
+                  <img
+                    src="../assets/partner1.svg"
+                    alt="Image 1"
+                    class="w-[1167px] h-[110px]"
+                  />
+                </div>
               </div>
-            </div>       @endforeach
+              <div class="swiper-slide">
+                <div
+                  class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
+                >
+                  <img
+                    src="../assets/partner2.svg"
+                    alt="Image 2"
+                    class="w-[1167px] h-[110px]"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
+                >
+                  <img
+                    src="../assets/partner3.svg"
+                    alt="Image 3"
+                    class="w-[1167px] h-[110px]"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
+                >
+                  <img
+                    src="../assets/partner4.svg"
+                    alt="Image 4"
+                    class="w-[1167px] h-[110px]"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
+                >
+                  <img
+                    src="../assets/partner5.svg"
+                    alt="Image 5"
+                    class="w-[1167px] h-[110px]"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
+                >
+                  <img
+                    src="../assets/partner6.svg"
+                    alt="Image 6"
+                    class="w-[1167px] h-[110px]"
+                  />
+                </div>
+              </div>
+            
+            {{-- </div>       @endforeach --}}
         </div>
       </div>
     </div>

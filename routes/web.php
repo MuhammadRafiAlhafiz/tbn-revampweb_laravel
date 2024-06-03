@@ -4,9 +4,7 @@ use App\Models\Page;
 use App\Models\Program;
 use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
-
-use App\Http\Controllers\Auth\RegisterController;
-
+use App\Http\Controllers\ParticipantController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -101,8 +99,12 @@ Route::get('/forgot-password', function () {
     return view('pages.profile.forgot-password');
 })->name('forgot-password');
 
-Route::get('user', [RegisterController::class, 'showRegistrationForm'])->name('register');
-Route::post('user', [RegisterController::class, 'register']);
+Route::get('/register', function () {
+    return view('pages.register.register');
+})->name('register');
+
+Route::post('/register', [ParticipantController::class, 'store'])->name('register.post');
+
 
 Route::get('/payment', function () {
     return view('pages.register.payment');
