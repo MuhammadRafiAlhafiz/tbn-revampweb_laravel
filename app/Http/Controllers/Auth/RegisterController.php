@@ -8,6 +8,9 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class RegisterController extends Controller
 {
@@ -22,7 +25,7 @@ class RegisterController extends Controller
     |
     */
 
-    use RegistersUsers;
+    // use RegistersUsers;
 
     /**
      * Where to redirect users after registration.
@@ -69,5 +72,25 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+    }
+
+    public function addUser(Request $request){
+        // do smth (insert user to database)
+        user::create([
+            'name' => $request['name'],
+            'email' => $request['email'],
+            'password' => Hash::make($request['password']),
+    
+        ]);
+
+        if($request){
+            // berhasil add user
+            
+                return view('pages.login.login');
+           
+        } else {
+            // gagal add user
+            return dd('fail');
+        }
     }
 }

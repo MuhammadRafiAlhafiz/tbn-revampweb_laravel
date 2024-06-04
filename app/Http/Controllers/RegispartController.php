@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Hash;
 use App\Models\Participant;
 use App\Models\Program;
 use App\Models\Regispart;
@@ -61,7 +61,7 @@ class RegispartController extends Controller
             'notes' => $request->notes,
         ]);
 
-        return redirect()->route('regispart.index')->with('success', 'Speaker berhasil ditambahkan.');
+        
     }
 
     /**

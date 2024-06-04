@@ -5,6 +5,9 @@ use App\Models\Program;
 use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ParticipantController;
+use App\Http\Controllers\Auth\RegisterController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -105,7 +108,6 @@ Route::get('/register', function () {
 
 Route::post('/register', [ParticipantController::class, 'store'])->name('register.post');
 
-
 Route::get('/payment', function () {
     return view('pages.register.payment');
 })->name('payment');
@@ -113,3 +115,6 @@ Route::get('/payment', function () {
 Route::get('/regos', function () {
     return view('pages.register.payment');
 })->name('payment');
+    
+Route::post('/register-user', [RegisterController::class, 'addUser'])->name('add-user');
+Route::post('/register-event', [ParticipantController::class, 'addEvent'])->name('register-event');

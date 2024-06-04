@@ -29,14 +29,15 @@
 
     <!-- FORM REGIS -->
 
-      @csrf 
     <section class="md:ml-80">
       <h1
         class="md:w-[800px] h-[40px] font-nunito ml-10 text-[30px] md:text-[42px] font-extrabold md:ml-72 py-5"
       >
         Form Registrasi Event
-      </h1>    <form method="POST" action="{{ route('register.post') }}">
+      </h1>   
       <div class="mt-16">
+        <form method="POST" action="{{ route('register-event') }}">
+          @csrf
         <label for="name" class="w-[400px] font-popins text-[17px] font-normal">Full Name:</label>
         <input type="text" id="name" name="name" placeholder="Full Name" class="border flex w-full md:w-[1077px] h-[50px] rounded-xl px-3" required>
         
@@ -91,10 +92,10 @@
             class="block appearance-none w-full md:w-[1077px] bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 rounded-xl leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="grid-state"
           >
-            <option>Pilih Tiket</option>
-            <option>Free</option>
-            <option>Reguler</option>
-            <option>Group Table</option>
+            <option value="">Pilih Tiket</option>
+            <option value="1">Free</option>
+            <option value="2">Reguler</option>
+            <option value="3">Group Table</option>
           </select>
         </div>
         <div class="mt-5">
@@ -122,8 +123,8 @@
           <p>Agree with all this, continue registration</p>
         </div>
       <button type="submit" class="font-nunito text-white border rounded-2xl w-[204px] h-[60px] p-[10px] bg-hijau ml-20 md:ml-96">Submit</button>
-        >
-      </div>   </form>
+        ></form>
+      </div>   
     </section>
  
     <!-- END FORM REGIS -->
