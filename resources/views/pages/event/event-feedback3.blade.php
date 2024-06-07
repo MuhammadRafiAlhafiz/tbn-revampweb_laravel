@@ -10,20 +10,19 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="shortcut icon" href="{{ asset('assets/logo-1.svg') }}" type="image/svg+xml" />
-    
   </head>
-  <body class="font-popins">
+  <body class="font-poppins">
     <!-- NAVBAR -->
     <nav class="bg-biru py-5 flex items-center justify-between w-full">
       <a href="{{ route('event') }}">
         <img
-          src="../assets/panah.svg"
+          src="/assets/panah.svg"
           alt=""
           class="md:ml-20 w-[50px] h-[30px]"
         />
       </a>
       <a href="{{ route('home') }}">
-        <img src="../assets/logo nav.svg" alt="" class="md:mr-20" />
+        <img src="/assets/logo nav.svg" alt="" class="md:mr-20" />
       </a>
     </nav>
     <!-- END NAVBAR -->
@@ -33,48 +32,48 @@
       <div class="flex flex-col justify-center items-center">
         <img
           class="w-[500px] h-[750px]"
-          src="../assets/banner-event3.svg"
+          src="/assets/banner-event3.svg"
           alt=""
         />
         <span class="w-[1000px] mb-5">
           <a href="{{ route('event') }}"><p class="text-hijau py-5 font-nunito text-[20px] font-normal">
             [ About Conference ]
           </p></a>
-          <h1 class="font-popins text-[34px] font-semibold">
-            The Future for Social Enterprises          </h1>
-          <div class="w-[967px] h-[250px] font-popins text-[21px] font-semibold">
-          <p class="py-1">
-            Traditionally, social enterprises have relied on market rate investments or pure philanthropic grants for their funding. With the development of innovative financial models like blended finance and risk adjusted market rate return impact investing, rich opportunities are generated for social enterprises to tap into the huge potential of private markets for capital. These opportunities can be catalytic for the social enterprise, and enable them to scale. Social enterprises are entrepreneurial organizations that blend social benefits and financial returns. 
-          </p>
-
-          <p class="py-5"
-            >So the capital that they rely on should also sit on a continuum that ranges from philanthropy to market-return impact investing. This is the emerging capital market for social enterprises, and the future.</p
-          >
+          <h1 class="font-poppins text-[34px] font-semibold">
+            The Future for Social Enterprises
+          </h1>
+          <div class="w-[967px] h-[250px] font-poppins text-[21px] font-semibold">
+            <p class="py-1">
+              Traditionally, social enterprises have relied on market rate investments or pure philanthropic grants for their funding. With the development of innovative financial models like blended finance and risk adjusted market rate return impact investing, rich opportunities are generated for social enterprises to tap into the huge potential of private markets for capital. These opportunities can be catalytic for the social enterprise, and enable them to scale. Social enterprises are entrepreneurial organizations that blend social benefits and financial returns. 
+            </p>
+            <p class="py-5">
+              So the capital that they rely on should also sit on a continuum that ranges from philanthropy to market-return impact investing. This is the emerging capital market for social enterprises, and the future.
+            </p>
+          </div>
         </span>
-      </div>
       </div>
     </section>
     <!-- END Banner Event 1 -->
 
     <!-- SHARING experiences -->
     <section>
-      <h1 class="mt-24 mx-28 text-[34px] font-semibold font-popins">
+      <h1 class="mt-24 mx-28 text-[34px] font-semibold font-poppins">
         Sharing Experience by Participants
       </h1>
       <div class="mt-10 mx-28">
         <div class="flex gap-5">
           <img
             class="w-[43px] h-[43px]"
-            src="../assets/event-feedbackcostumer1.svg"
+            src="/assets/event-feedbackcostumer1.svg"
             alt="Feedback Customer 1"
           />
           <div class="flex-col mt-2">
             <div class="flex w-[23px] h-[23px]">
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
             </div>
             <p class="w-[570px] h-[60px] text-[17px] font-normal py-2">
               This conference opened my eyes to the latest sales strategies and
@@ -92,16 +91,16 @@
         <div class="flex gap-5 mt-5">
           <img
             class="w-[43px] h-[43px]"
-            src="../assets/event-feedbackcostumer2.svg"
+            src="/assets/event-feedbackcostumer2.svg"
             alt="Feedback Customer 2"
           />
           <div class="flex-col mt-2">
             <div class="flex w-[23px] h-[23px]">
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
             </div>
             <p class="w-[570px] h-[60px] text-[17px] font-normal py-2">
               The sessions were packed with valuable and relevant information. I
@@ -119,16 +118,16 @@
         <div class="flex gap-5 mt-5">
           <img
             class="w-[43px] h-[43px]"
-            src="../assets/event-feedbackcostumer3.svg"
+            src="/assets/event-feedbackcostumer3.svg"
             alt="Feedback Customer 3"
           />
           <div class="flex-col mt-2">
             <div class="flex w-[23px] h-[23px]">
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackstar.svg" alt="Star" />
-              <img src="../assets/event-feedbackgraystar.svg" alt="Gray Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackstar.svg" alt="Star" />
+              <img src="/assets/event-feedbackgraystar.svg" alt="Gray Star" />
             </div>
             <p class="w-[570px] h-[60px] text-[17px] font-normal py-2">
               The Transformational Sales Conference 2023 provided practical
@@ -145,7 +144,7 @@
         <hr class="w-[700px] border-t-3 border-gray-300 mt-2" />
         <a href="{{ route('event-feedback3') }}">
           <div class="flex gap-2 mt-5">
-            <img src="../assets/event-feedbackrefresh.svg" alt="Refresh" />
+            <img src="/assets/event-feedbackrefresh.svg" alt="Refresh" />
             <p class="text-[11px] font-bold text-gray-500">LOAD MORE REVIEWS</p>
           </div>
         </a>
@@ -153,21 +152,21 @@
     </section>
     <!-- END SHARING experiences -->
 
-    <!-- FEED BACK FORM -->
+    <!-- FEEDBACK FORM -->
     <section id="" class="flex justify-center mt-20">
       <div class="bg-white p-8 rounded-lg w-full max-w-md">
         <div class="flex flex-col items-center">
           <div class="bg-hijau w-[130px] h-[14px] rounded-lg mb-4"></div>
           <h1
-            class="font-popins text-[56px] font-bold text-blue-950 mb-2 w-[610px] h-[67px]"
+            class="font-poppins text-[56px] font-bold text-blue-950 mb-2 w-[610px] h-[67px]"
           >
             Share Your Feedback
           </h1>
-          <p class="font-popins text-[21px] font-semibold mb-6">
+          <p class="font-poppins text-[21px] font-semibold mb-6">
             how was your experience?
           </p>
           <div class="flex space-x-2 mb-6">
-            <img src="../assets/event-starRating.svg" alt="Star Rating" />
+            <img src="/assets/event-starRating.svg" alt="Star Rating" />
           </div>
         </div>
         <form>
@@ -189,7 +188,7 @@
               type="button"
               class="flex items-center py-2 px-20 border-2 rounded-2xl text-gray-600 focus:outline-none"
             >
-              <img src="../assets/event-cameraphoto.svg" alt="Add Photo" />
+              <img src="/assets/event-cameraphoto.svg" alt="Add Photo" />
               Add Photo
             </button>
           </div>
@@ -204,19 +203,20 @@
         </form>
       </div>
     </section>
-    <!-- END FEED BACK FORM -->
+    <!-- END FEEDBACK FORM -->
+
     <!-- THANK YOU SECTION (Initially Hidden) -->
     <section id="thankYouSection" class="hidden flex-col">
       <div class="text-center flex justify-center items-center mt-20">
         <div>
           <img
-            src="../assets/event-payment-sucsses payment.svg"
+            src="/assets/event-payment-sucsses payment.svg"
             alt="Check Mark"
             class="w-[300px] h-[350px]"
           />
         </div>
         <div>
-          <h1 class="text-[34px] font-semibold font-popins text-hijau">
+          <h1 class="text-[34px] font-semibold font-poppins text-hijau">
             THANK YOU for Feedback!
           </h1>
           <p class="mt-2 text-[34px] font-semibold">
@@ -232,16 +232,16 @@
       </div>
     </section>
     <!-- END THANK YOU SECTION -->
-    
+
     <!-- FOOTER -->
-    <section class="bg-white mt-10">
-      <div class="flex flex-col md:flex-row md:p-10 justify-between">
+    <footer class="bg-white mt-10">
+      <div class="flex flex-col md:flex-row md:p-10 justify-between mx-10">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
-          <img src="../assets/logo footer.svg" alt="" />
+          <img src="/assets/logo footer.svg" alt="" />
           <p
-            class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins"
+            class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-poppins"
           >
-            TBN Alliance adalah jaringan global wirausaha yang berorientasi pada
+            TBN Indone adalah jaringan global wirausaha yang berorientasi pada
             tujuan, investor dampak, dan pembangun kapasitas yang mengambil
             pendekatan kewirausahaan untuk mengentaskan kemiskinan di masyarakat
             berpenghasilan rendah dan kurang terlayani.
@@ -249,27 +249,27 @@
         </div>
 
         <div class="flex flex-col mt-5">
-          <h1 class="text-[21px] md:text-lg font-semibold font-popins">
+          <h1 class="text-[21px] md:text-lg font-semibold font-poppins">
             LOKASI
           </h1>
           <p
-            class="text-[18px] md:text-base font-normal font-popins mt-3 md:mt-5"
+            class="text-[18px] md:text-base font-normal font-poppins mt-3 md:mt-5"
           >
             Jl. M.H.Thamrin No.20, Menteng
           </p>
-          <p class="text-[18px] md:text-base font-normal font-popins">
+          <p class="text-[18px] md:text-base font-normal font-poppins">
             Jakarta Pusat 10350, Indonesia
           </p>
         </div>
 
         <div>
           <h1
-            class="font-popins font font-semibold text-[21px] md:text-lg mt-2"
+            class="font-poppins font font-semibold text-[21px] md:text-lg mt-2"
           >
             Perusahaan
           </h1>
           <div
-            class="flex flex-col font-popins font-normal text-[18px] md:text-base mt-3 md:mt-5"
+            class="flex flex-col font-poppins font-normal text-[18px] md:text-base mt-3 md:mt-5"
           >
             <a href="{{ route('home') }}">Home</a>
             <a href="{{ route('about') }}"class="py-2">About Us</a>
@@ -280,27 +280,27 @@
         </div>
 
         <div>
-          <h1 class="font-popins font-semibold text-[21px] md:text-lg">
+          <h1 class="font-poppins font-semibold text-[21px] md:text-lg">
             Ikuti Social Media Kami
           </h1>
           <div class="flex gap-3 md:gap-[20px] py-5">
             <a href="https://www.instagram.com/tbn.indonesia/"
-              ><img src="../assets/nav-instagram.svg" alt=""
+              ><img src="/assets/nav-instagram.svg" alt=""
             /></a>
             <a href="https://www.youtube.com/@tbnindonesia902"
-              ><img src="../assets/nav-youtube.svg" alt=""
+              ><img src="/assets/nav-youtube.svg" alt=""
             /></a>
-            <a href="https://wa.me/+6282310001908"><img src="../assets/nav-whatsapp.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-gmail.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-link.svg" alt="" /></a>
+            <a href="https://wa.me/+6282310001908"><img src="/assets/nav-whatsapp.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-gmail.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-link.svg" alt="" /></a>
           </div>
-          <h1 class="font-popins font-semibold text-[21px] md:text-lg">
+          <h1 class="font-poppins font-semibold text-[21px] md:text-lg">
             Hubungi Kami
           </h1>
           <div class="flex gap-1 mt-2">
             <img
-              src="../assets/icon email.svg"
-              class="font-popins font-normal text-[17px]"
+              src="/assets/icon email.svg"
+              class="font-poppins font-normal text-[17px]"
               alt=""
             />
             <a href="https://www.tbnalliance.org/">hello@tbnalliance.org</a>
@@ -311,13 +311,12 @@
         <h1
           class="justify-center items-center text-center p-5 text-white w-[380px] md:w-full text-[16px] font-bold"
         >
-          Copyright © 2023 - Transformational Business Network (TBN) Alliance -
+          Copyright © 2023 - Transformational Business Network (TBN) Indonesia -
           All rights reserved.
         </h1>
       </div>
-    </section>
-    <!-- END FOOTR -->
-    <!-- THANK YOU SECTION (Initially Hidden) -->
+    </footer>
+    <!-- END FOOTER -->
 
     <script>
       document

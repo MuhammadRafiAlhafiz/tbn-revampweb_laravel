@@ -20,7 +20,7 @@
         <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
           <a href="{{ route('home') }}"
             ><img
-              src="../assets/logo nav.svg"
+              src="/assets/logo nav.svg"
               alt="logo navbar"
               class="w-[100px]"
           /></a>
@@ -41,7 +41,7 @@
         </div>
         <button class="w-16 lg:hidden block buttonToogle">
           <img
-            src="../assets/menu1.svg"
+            src="/assets/menu1.svg"
             alt="Menu"
             class="w-[100px] md:w-0 h-"
           />
@@ -203,14 +203,14 @@
           <div class="flex mt-5 justify-center gap-10">
             <a href="{{ route('email-confirm') }}"
               ><img
-                src="../assets/google.svg"
+                src="/assets/google.svg"
                 class="border py-2 px-10 rounded-2xl border-hijau"
                 alt=""
             /></a>
 
             <a href="{{ route('email-confirm') }}"
               ><img
-                src="../assets/apple.svg"
+                src="/assets/apple.svg"
                 class="border py-2 px-10 rounded-2xl border-hijau"
                 alt=""
             /></a>
@@ -227,7 +227,7 @@
                 class="w-full h-[300px] md:h-[600px] overflow-hidden bg-white rounded-2xl shadow-md"
               >
                 <img
-                  src="../assets/caraousel-1.svg"
+                  src="/assets/caraousel-1.svg"
                   alt="Image 1"
                   class="object-cover w-full h-full"
                 />
@@ -238,7 +238,7 @@
                 class="w-full h-[300px] md:h-[600px] overflow-hidden bg-white rounded-lg shadow-md"
               >
                 <img
-                  src="../assets/caraousel-2.svg"
+                  src="/assets/caraousel-2.svg"
                   alt="Image 2"
                   class="object-cover w-full h-full"
                 />
@@ -249,7 +249,7 @@
                 class="w-full h-[300px] md:h-[600px] overflow-hidden bg-white rounded-lg shadow-md"
               >
                 <img
-                  src="../assets/caraousel-3.svg"
+                  src="/assets/caraousel-3.svg"
                   alt="Image 3"
                   class="object-cover w-full h-full"
                 />

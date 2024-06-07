@@ -105,7 +105,7 @@ Route::get('/sign', function () {
     return view('pages.login.sign');
 })->name('sign');
 
-Route::get('/eamil-confirm', function () {
+Route::get('/email-confirm', function () {
     return view('pages.login.email-confirm');
 })->name('email-confirm');
 
@@ -118,7 +118,7 @@ Route::get('/profile-edit', function () {
 })->name('profile-edit');
 
 Route::get('/forgot-password', function () {
-    return view('pages.profile.forgot-password');
+    return view('pages.login.forgot-password');
 })->name('forgot-password');
 
 Route::get('/register', function () {
@@ -129,6 +129,6 @@ Route::get('/payment', function () {
     return view('pages.register.payment');
 })->name('payment');
 
-Route::get('/regos', function () {
-    return view('pages.register.payment');
-})->name('payment');
+Route::get('/history-event', function () {
+    return view('pages.profile.history-event');
+})->name('history-event');

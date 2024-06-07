@@ -14,13 +14,13 @@
     <!-- NAVBAR --> 
     <nav
       id="navbar"
-      class="px-8 py-2 md:py-1 fixed w-full font-jakarta z-50 shadow-lg backdrop-blur-lg bg-biru"
+      class="px-8 py-2 md:py-3 fixed w-full font-jakarta z-50 shadow-lg backdrop-blur-lg bg-biru"
     >
       <div class="flex items-center justify-between">
         <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
           <a href="{{ route('home') }}"
             ><img
-              src="../assets/logo nav.svg"
+              src="/assets/logo nav.svg"
               alt="logo navbar"
               class="w-[100px]"
           /></a>
@@ -41,7 +41,7 @@
         </div>
         <button class="w-16 lg:hidden block buttonToogle">
           <img
-            src="../assets/menu1.svg"
+            src="/assets/menu1.svg"
             alt="Menu"
             class="w-[100px] md:w-0 h-"
           />
@@ -115,7 +115,7 @@
     <!-- BACKGROUND CONTACT -->
     <section
       id="home"
-      class="bg-[url('../assets/bg-contact.svg')] bg-cover bg-center relative"
+      class="bg-[url('/assets/bg-contact.svg')] bg-cover bg-center relative"
     >
       <div
         class="max-w-[1200px] min-h-[100vh] flex flex-col justify-center mx-auto px-4 text-biru"
@@ -156,7 +156,7 @@
               class="flex items-center mb-2 text-white text-[14px] md:text-[17px] py-7 font-normal"
             >
               <img
-                src="../assets/email-contact.svg"
+                src="/assets/email-contact.svg"
                 alt=""
                 class="mr-2"
               />hello@tbnalliance.org
@@ -164,19 +164,19 @@
             <span
               class="flex items-center mb-2 text-white text-[14px] md:text-[17px] font-normal"
             >
-              <img src="../assets/telp-contact.svg" alt="" class="mr-2" />+62
+              <img src="/assets/telp-contact.svg" alt="" class="mr-2" />+62
               2222 3333 4444
             </span>
             <span
               class="flex items-center mb-2 text-white text-[14px] md:text-[17px] font-normal py-7"
             >
-              <img src="../assets/lokasi-contact.svg" alt="" class="mr-2" />Jl.
+              <img src="/assets/lokasi-contact.svg" alt="" class="mr-2" />Jl.
               M.H.Thamrin No.20, Menteng
             </span>
             <span
               class="flex items-center text-white text-[14px] md:text-[17px] font-normal"
             >
-              <img src="../assets/jam-contact.svg" alt="" class="mr-2" />08.30 -
+              <img src="/assets/jam-contact.svg" alt="" class="mr-2" />08.30 -
               17.00
             </span>
           </div>
@@ -184,29 +184,21 @@
       </div>
 
       <div class="flex-col border p-14 md:p-[40px] rounded-xl">
-        <div class="flex flex-col md:flex-row md:mb-4 md:gap-3">
-          <input
-            type="text"
-            id="first_name"
-            name="first_name"
-            placeholder="First Name*"
-            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[220px] p-3 shadow-sm sm:text-sm border-gray-400 border-2 rounded-md"
-          />
-          <input
-            type="text"
-            id="last_name"
-            name="last_name"
-            placeholder="Last Name*"
-            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[250px] p-3 shadow-sm sm:text-sm border-gray-400 border-2 rounded-md"
-          />
-        </div>
+
+      <input
+          type="full_name"
+          id="full_name"
+          name="full_name"
+          placeholder="Full Name"
+          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[480px] p-3 shadow-sm sm:text-sm border-gray-400 border-2 rounded-md"
+        />
 
         <input
           type="email"
           id="email"
           name="email"
           placeholder="Email*"
-          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[480px] p-3 shadow-sm sm:text-sm border-gray-400 border-2 rounded-md"
+          class="mt-5 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[480px] p-3 shadow-sm sm:text-sm border-gray-400 border-2 rounded-md"
         />
         <div class="py-5">
           <input
@@ -242,26 +234,26 @@
     </div>
     <section
       id="home"
-      class="bg-[url('../assets/peta-contact.svg')] bg-cover w-[1000px] h-[545px] mt-10 ml-72"
+      class="bg-[url('/assets/peta-contact.svg')] bg-cover w-[1000px] h-[545px] mt-10 ml-72"
     >
         <div class="flex justify-center items-center gap-56">
           <h1 class="text-[32px] font-bold text-hijau mt-36 mr-36 ">
-            <img src="../assets/map-contact.svg" alt="" />
+            <img src="/assets/map-contact.svg" alt="" />
             TBN American
           </h1>
           <h1 class="text-[32px] font-bold text-hijau mt-36">
-            <img src="../assets/map-contact.svg" alt="" />
+            <img src="/assets/map-contact.svg" alt="" />
             TBN Asia
           </h1>
         </div>
 
         <div class="flex justify-center ml-[500px] gap-24">
           <h1 class="text-[32px] font-bold text-hijau mt-20">
-            <img src="../assets/map-contact.svg" alt="" />
+            <img src="/assets/map-contact.svg" alt="" />
             TBN Afrika
           </h1>
           <h1 class="text-[32px] font-bold text-hijau ">
-            <img src="../assets/map-contact.svg" alt="" />
+            <img src="/assets/map-contact.svg" alt="" />
             TBN Indonesia
           </h1>
         </div>
@@ -281,15 +273,15 @@
     </section>
     <!-- END CLICK -->
 
-    <!-- FOOTER -->
-    <section class="bg-white mt-10">
-      <div class="flex flex-col md:flex-row md:p-10 justify-between">
+     <!-- FOOTER -->
+     <section class="bg-white mt-10">
+      <div class="flex flex-col md:flex-row md:p-10 justify-between mx-10">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
-          <img src="../assets/logo footer.svg" alt="" />
+          <img src="/assets/logo footer.svg" alt="" />
           <p
             class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins"
           >
-            TBN Alliance adalah jaringan global wirausaha yang berorientasi pada
+            TBN Indonesia adalah jaringan global wirausaha yang berorientasi pada
             tujuan, investor dampak, dan pembangun kapasitas yang mengambil
             pendekatan kewirausahaan untuk mengentaskan kemiskinan di masyarakat
             berpenghasilan rendah dan kurang terlayani.
@@ -333,21 +325,21 @@
           </h1>
           <div class="flex gap-3 md:gap-[20px] py-5">
             <a href="https://www.instagram.com/tbn.indonesia/"
-              ><img src="../assets/nav-instagram.svg" alt=""
+              ><img src="/assets/nav-instagram.svg" alt=""
             /></a>
             <a href="https://www.youtube.com/@tbnindonesia902"
-              ><img src="../assets/nav-youtube.svg" alt=""
+              ><img src="/assets/nav-youtube.svg" alt=""
             /></a>
-            <a href=""><img src="../assets/nav-whatsapp.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-gmail.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-link.svg" alt="" /></a>
+            <a href="https://wa.me/+6282310001908"><img src="/assets/nav-whatsapp.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-gmail.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-link.svg" alt="" /></a>
           </div>
           <h1 class="font-popins font-semibold text-[21px] md:text-lg">
             Hubungi Kami
           </h1>
           <div class="flex gap-1 mt-2">
             <img
-              src="../assets/icon email.svg"
+              src="/assets/icon email.svg"
               class="font-popins font-normal text-[17px]"
               alt=""
             />
@@ -359,13 +351,13 @@
         <h1
           class="justify-center items-center text-center p-5 text-white w-[380px] md:w-full text-[16px] font-bold"
         >
-          Copyright © 2023 - Transformational Business Network (TBN) Alliance -
+          Copyright © 2023 - Transformational Business Network (TBN) Indonesia -
           All rights reserved.
         </h1>
       </div>
     </section>
-
     <!-- END FOOTR -->
+
     <script src="../js/scrollnavbar.js"></script>
     <script src="../js/humberger.js"></script>
   </body>

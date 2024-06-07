@@ -15,19 +15,19 @@
     <nav class="bg-biru py-5 flex items-center justify-between">
       <a href="{{ route('home') }}"
         ><img
-          src="../assets/panah.svg"
+          src="/assets/panah.svg"
           alt=""
           class="md:ml-20 w-[50px] h-[30px]"
       /></a>
       <a href="{{ route('home') }}"
-        ><img src="../assets/logo nav.svg" alt="" class="md:mr-20"
+        ><img src="/assets/logo nav.svg" alt="" class="md:mr-20"
       /></a>
     </nav>
     <!-- END NAVBAR -->
 
     <!-- CONTENT -->
     <div class="flex flex-col justify-center items-center mt-5">
-      <img src="../assets/logo_email.svg" alt="" class="w-[400px] h-[250px]" />
+      <img src="/assets/logo_email.svg" alt="" class="w-[400px] h-[250px]" />
       <h1 class="font-popins text-hijau text-[44px] font-bold py-6">
         Email Confirmation
       </h1>
@@ -45,7 +45,7 @@
           Check your email address
         </button></a
       >
-      <img src="../assets/garis hitam.svg" alt="" class="py-5" />
+      <img src="/assets/garis hitam.svg" alt="" class="py-5" />
       <p class="text-[17px] font-normal font-popins">
         If you not got any email
         <a href=""><span class="text-hijau">Resend confirmation maiil</span></a>

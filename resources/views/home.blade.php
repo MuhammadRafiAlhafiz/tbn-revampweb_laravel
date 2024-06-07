@@ -11,16 +11,17 @@
 </head>
 
   <body class="font-popins">
+    <section>
     <!-- NAVBAR --> 
     <nav
       id="navbar"
-      class="px-8 py-2 md:py-1 fixed w-full font-jakarta z-50 shadow-lg backdrop-blur-lg bg-biru"
+      class="px-8 py-2 md:py-3 fixed w-full font-jakarta z-50 shadow-lg backdrop-blur-lg bg-biru"
     >
       <div class="flex items-center justify-between">
         <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
           <a href="{{ route('home') }}"
             ><img
-              src="../assets/logo nav.svg"
+              src="/assets/logo nav.svg"
               alt="logo navbar"
               class="w-[100px]"
           /></a>
@@ -41,7 +42,7 @@
         </div>
         <button class="w-16 lg:hidden block buttonToogle">
           <img
-            src="../assets/menu1.svg"
+            src="assets/menu1.svg"
             alt="Menu"
             class="w-[100px] md:w-0 h-"
           />
@@ -115,7 +116,7 @@
     <!-- HOME PAGE -->
     <section
       id="home"
-      class="bg-[url('../assets/navbar.svg')] bg-cover bg-center relative w-full"
+      class="bg-[url('/assets/navbar.svg')] bg-cover bg-center relative w-full"
     >
       <div
         class="max-w-[1200px] min-h-[100vh] flex flex-col justify-center mx-auto px-4 text-white"
@@ -140,13 +141,13 @@
     <!-- ABOUT TBN -->
     <section
       id="about"
-      class="bg-[url('../assets/baner1.svg')] bg-cover bg-center relative">
+      class="bg-[url('/assets/baner1.svg')] bg-cover bg-center relative">
       <div
         class="max-w-[1200px] min-h-[100vh] py-24 flex flex-col md:flex-row items-center justify-center mx-auto px-4">
         <a
           href="https://www.youtube.com/watch?v=Kgrumz_76RI&t=3s"
           class="w-full md:max-w-md mx-auto md:mr-12 md:w-[700px] md:h-[300px]"
-          ><img src="../assets/content video.svg" alt="ini video"
+          ><img src="/assets/content video.svg" alt="ini video"
         /></a>
         <div class="md:w-1/2 text-white md:mb-8">
           <h1
@@ -181,7 +182,7 @@
 
     <!-- CONTENT OUR MISSION -->
     <section
-      class="bg-[url('../assets/heatmap.svg')] bg-cover bg-center relative"
+      class="bg-[url('/assets/heatmap.svg')] bg-cover bg-center relative"
     >
       <div
         class="sm:h-[800px] flex flex-col md:flex-row items-center justify-center px-10 gap-28"
@@ -206,7 +207,7 @@
           >
             <span>
               <img
-                src="../assets/icon_ourmission1.svg"
+                src="/assets/icon_ourmission1.svg"
                 alt=""
                 class="relative right-[2px] bottom-[2px]"
               />
@@ -223,7 +224,7 @@
           >
             <span>
               <img
-                src="../assets/icon_ourmission2.svg"
+                src="/assets/icon_ourmission2.svg"
                 alt=""
                 class="relative right-[2px] bottom-[2px]"
               />
@@ -240,7 +241,7 @@
           >
             <span>
               <img
-                src="../assets/icon_ourmission3.svg"
+                src="/assets/icon_ourmission3.svg"
                 alt=""
                 class="relative right-[2px] bottom-[2px]"
               />
@@ -257,10 +258,10 @@
     <!-- END CONTENT OUR MISSION-->
 
     <!-- WHY CHOOSE US -->
-    <section id="choose" class="bg-white">
+    <section id="choose" class="">
       <div
         class="flex flex-col md:flex-row py-20 justify-center items-center max-w-[1200px] mx-auto px-4 md:gap-[150px]">
-        <img src="../assets/image choose.svg" alt="" class="mt-8 md:mt-0" />
+        <img src="/assets/image choose.svg" alt="" class="mt-8 md:mt-0" />
 
         <div class="md:mr-8">
           <h1
@@ -273,7 +274,7 @@
               <span
                 class="flex flex-row items-center text-[21px] font-semibold text-black my-3 md:my-5"
               >
-                <img src="../assets/cek.svg" alt="" class="w-6 h-6 mr-2" />
+                <img src="/assets/cek.svg" alt="" class="w-6 h-6 mr-2" />
                 <p class="text-sm md:text-base py-2">
                   Extensive Network Access
                 </p>
@@ -281,7 +282,7 @@
               <span
                 class="flex flex-row items-center text-[21px] font-semibold text-black"
               >
-                <img src="../assets/cek.svg" alt="" class="w-6 h-6 mr-2" />
+                <img src="/assets/cek.svg" alt="" class="w-6 h-6 mr-2" />
                 <p class="text-sm md:text-base py-2">
                   Cutting-Edge & Practical Solutions
                 </p>
@@ -289,13 +290,13 @@
               <span
                 class="flex flex-row items-center text-[21px] font-semibold text-black my-3 md:my-5"
               >
-                <img src="../assets/cek.svg" alt="" class="w-6 h-6 mr-2" />
+                <img src="/assets/cek.svg" alt="" class="w-6 h-6 mr-2" />
                 <p class="text-sm md:text-base py-2">Competitive Advantage</p>
               </span>
               <span
                 class="flex flex-row items-center text-[21px] font-semibold text-black"
               >
-                <img src="../assets/cek.svg" alt="" class="w-6 h-6 mr-2" />
+                <img src="/assets/cek.svg" alt="" class="w-6 h-6 mr-2" />
                 <p class="text-sm md:text-base py-2">
                   Enhanced Brand Reputation.
                 </p>
@@ -303,7 +304,7 @@
               <span
                 class="flex flex-row items-center text-[21px] font-semibold text-black my-3 md:my-5"
               >
-                <img src="../assets/cek.svg" alt="" class="w-6 h-6 mr-2" />
+                <img src="/assets/cek.svg" alt="" class="w-6 h-6 mr-2" />
                 <p class="text-sm md:text-base py-2">
                   Adaptability and Innovation
                 </p>
@@ -311,7 +312,7 @@
               <span
                 class="flex flex-row items-center text-[21px] font-semibold text-black"
               >
-                <img src="../assets/cek.svg" alt="" class="w-6 h-6 mr-2" />
+                <img src="/assets/cek.svg" alt="" class="w-6 h-6 mr-2" />
                 <p class="text-sm md:text-base py-2">
                   Extensive Network Access
                 </p>
@@ -333,13 +334,13 @@
     <!-- Event Now Page -->
     <section
       id="home"
-      class="bg-[url('../assets/bg-eventNow.svg')] bg-cover bg-center relative py-10 w-full">
+      class="bg-[url('/assets/bg-eventNow.svg')] bg-cover bg-center relative py-10 w-full ">
       <h1 class="text-[44px] font-popins font-bold text-center">Event Now</h1>
       <div
         class="max-w-[1200px] min-h-[600px] flex flex-col md:flex-row justify-center items-center mx-auto px-4 text-white gap-[110px]"
       >
         <img
-          src="../assets/banner-event1.svg"
+          src="/assets/banner-event1.svg"
           alt=""
           class="w-[400px] h-[475px]"
         />
@@ -391,7 +392,7 @@
 
     <!-- Image Baner -->
     <div class="bg-white">
-      <img src="../assets/baner4.svg" class="flex mx-auto py-24 w-50" alt="" />
+      <img src="/assets/baner4.svg" class="flex mx-auto py-24 w-50" alt="" />
     </div>
     <!-- end image baner -->
 
@@ -410,7 +411,7 @@
                 class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-2xl shadow-md"
               >
                 <img
-                  src="../assets/partner1.svg"
+                  src="/assets/partner1.svg"
                   alt="Image 1"
                   class="w-[1167px] h-[110px]"
                 />
@@ -421,7 +422,7 @@
                 class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
               >
                 <img
-                  src="../assets/partner2.svg"
+                  src="/assets/partner2.svg"
                   alt="Image 2"
                   class="w-[1167px] h-[110px]"
                 />
@@ -432,7 +433,7 @@
                 class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
               >
                 <img
-                  src="../assets/partner3.svg"
+                  src="/assets/partner3.svg"
                   alt="Image 3"
                   class="w-[1167px] h-[110px]"
                 />
@@ -443,7 +444,7 @@
                 class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
               >
                 <img
-                  src="../assets/partner4.svg"
+                  src="/assets/partner4.svg"
                   alt="Image 4"
                   class="w-[1167px] h-[110px]"
                 />
@@ -454,7 +455,7 @@
                 class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
               >
                 <img
-                  src="../assets/partner5.svg"
+                  src="/assets/partner5.svg"
                   alt="Image 5"
                   class="w-[1167px] h-[110px]"
                 />
@@ -465,7 +466,7 @@
                 class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
               >
                 <img
-                  src="../assets/partner6.svg"
+                  src="/assets/partner6.svg"
                   alt="Image 6"
                   class="w-[1167px] h-[110px]"
                 />
@@ -512,6 +513,17 @@
               />
             </div>
             <div>
+              <label for="phone_number" class="block text-sm font-medium text-gray-700"
+                >Phone Number</label
+              >
+              <input
+                type="phone_number"
+                id="phone_number"
+                name="phone_number"
+                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[250px] p-2 shadow-sm sm:text-sm border-gray-600 border-2 rounded-md"
+              />
+            </div>
+            <div>
               <label
                 for="message"
                 class="block text-sm font-medium text-gray-700"
@@ -534,24 +546,24 @@
           </form>
         </div>
         <div
-          class="flex md:w-[578px] h-[445px] p-[10px] items-center gap-[10px] bg-hijau md:absolute sm:mt-[80px] md:right-[130px]"
+          class="flex md:w-[578px] h-[400px] p-[10px] items-center gap-[10px] bg-hijau md:absolute sm:mt-[80px] md:right-[130px]"
         >
           <div class="flex flex-col ml-14 gap-8 text-white">
             <p class="text-[27px] font-semibold">Info</p>
             <span class="flex flex-row items-center gap-5 text-[17px]">
-              <img src="../assets/email-contact.svg" alt="" />
+              <img src="/assets/email-contact.svg" alt="" />
               <p>hello@tbnalliance.org</p>
             </span>
             <span class="flex flex-row items-center gap-5 text-[17px]">
-              <img src="../assets/telp-contact.svg" alt="" />
+              <img src="/assets/telp-contact.svg" alt="" />
               <p>+62 2222 3333 4444</p>
             </span>
             <span class="flex flex-row items-center gap-5 text-[17px]">
-              <img src="../assets/lokasi-contact.svg" alt="" />
+              <img src="/assets/lokasi-contact.svg" alt="" />
               <p>Jl. M.H.Thamrin No.20, Menteng</p>
             </span>
             <span class="flex flex-row items-center gap-5 text-[17px]">
-              <img src="../assets/jam-contact.svg" alt="" />
+              <img src="/assets/jam-contact.svg" alt="" />
               <p>08.30 - 17.00</p>
             </span>
           </div>
@@ -565,13 +577,13 @@
 
     <!-- FOOTER -->
     <section class="bg-white mt-10">
-      <div class="flex flex-col md:flex-row md:p-10 justify-between">
+      <div class="flex flex-col md:flex-row md:p-10 justify-between mx-10">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
-          <img src="../assets/logo footer.svg" alt="" />
+          <img src="/assets/logo footer.svg" alt="" />
           <p
             class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins"
           >
-            TBN Alliance adalah jaringan global wirausaha yang berorientasi pada
+            TBN Indonesia adalah jaringan global wirausaha yang berorientasi pada
             tujuan, investor dampak, dan pembangun kapasitas yang mengambil
             pendekatan kewirausahaan untuk mengentaskan kemiskinan di masyarakat
             berpenghasilan rendah dan kurang terlayani.
@@ -615,21 +627,21 @@
           </h1>
           <div class="flex gap-3 md:gap-[20px] py-5">
             <a href="https://www.instagram.com/tbn.indonesia/"
-              ><img src="../assets/nav-instagram.svg" alt=""
+              ><img src="/assets/nav-instagram.svg" alt=""
             /></a>
             <a href="https://www.youtube.com/@tbnindonesia902"
-              ><img src="../assets/nav-youtube.svg" alt=""
+              ><img src="/assets/nav-youtube.svg" alt=""
             /></a>
-            <a href="https://wa.me/+6282310001908"><img src="../assets/nav-whatsapp.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-gmail.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-link.svg" alt="" /></a>
+            <a href="https://wa.me/+6282310001908"><img src="/assets/nav-whatsapp.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-gmail.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-link.svg" alt="" /></a>
           </div>
           <h1 class="font-popins font-semibold text-[21px] md:text-lg">
             Hubungi Kami
           </h1>
           <div class="flex gap-1 mt-2">
             <img
-              src="../assets/icon email.svg"
+              src="/assets/icon email.svg"
               class="font-popins font-normal text-[17px]"
               alt=""
             />
@@ -641,7 +653,7 @@
         <h1
           class="justify-center items-center text-center p-5 text-white w-[380px] md:w-full text-[16px] font-bold"
         >
-          Copyright © 2023 - Transformational Business Network (TBN) Alliance -
+          Copyright © 2023 - Transformational Business Network (TBN) Indonesia -
           All rights reserved.
         </h1>
       </div>

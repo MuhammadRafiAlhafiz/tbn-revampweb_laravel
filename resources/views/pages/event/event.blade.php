@@ -14,13 +14,13 @@
     <!-- NAVBAR --> 
     <nav
       id="navbar"
-      class="px-8 py-2 md:py-1 fixed w-full font-jakarta z-50 shadow-lg backdrop-blur-lg bg-biru"
+      class="px-8 py-2 md:py-3 fixed w-full font-jakarta z-50 shadow-lg backdrop-blur-lg bg-biru"
     >
       <div class="flex items-center justify-between">
         <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
           <a href="{{ route('home') }}"
             ><img
-              src="../assets/logo nav.svg"
+              src="/assets/logo nav.svg"
               alt="logo navbar"
               class="w-[100px]"
           /></a>
@@ -41,7 +41,7 @@
         </div>
         <button class="w-16 lg:hidden block buttonToogle">
           <img
-            src="../assets/menu1.svg"
+            src="/assets/menu1.svg"
             alt="Menu"
             class="w-[100px] md:w-0 h-"
           />
@@ -116,7 +116,7 @@
     <!-- content banner -->
     <section
       id="home"
-      class="bg-[url('../assets/bg-event.svg')] bg-cover bg-center relative w-full h-[600px]"
+      class="bg-[url('/assets/bg-event.svg')] bg-cover bg-center relative w-full h-[600px]"
     >
       <div
         class="max-w-[1200px] min-h-[100vh] flex flex-col justify-center items-end mx-auto px-4 text-white"
@@ -158,7 +158,7 @@
                   placeholder="Business"
                   class="mt-1 block w-full md:w-[280px] p-3 shadow-sm sm:text-sm  rounded-md bg-transparent font-popins text-[21px] font-semibold"
                 />
-                <img src="../assets/garis-event.svg" alt="">
+                <img src="/assets/garis-event.svg" alt="">
             </span>
             <span>
                 <h1 class="font-popins text-[17px] font-normal">Place</h1>
@@ -169,7 +169,7 @@
                   placeholder="Place"
                   class="mt-1 block w-full md:w-[280px] p-3 shadow-sm sm:text-sm  rounded-md bg-transparent font-popins text-[21px] font-semibold"
                 />
-                <img src="../assets/garis-event.svg" alt="">
+                <img src="/assets/garis-event.svg" alt="">
             </span>
 
             <span>
@@ -181,7 +181,7 @@
                 <option>Tuesday</option>
                 <option>Wednesday</option>
                 </select>
-                <img src="../assets/garis-event.svg" alt="">
+                <img src="/assets/garis-event.svg" alt="">
             </span>
         </div>
       </div>
@@ -191,17 +191,17 @@
 
     <!-- LIST EVENT -->
     <!-- EVENT 1 -->
-    <div id="event" class="max-w-[1200px] min-h-[600px] flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[110px] mx-auto px-4 text-white mt-5">
-        <img src="../assets/banner-event1.svg" alt="" class="w-[300px] h-[375px]" />
+    <div id="event" class="min-h-[600px] flex flex-col md:flex-row justify-center items-center gap-14 text-white">
+        <img src="/assets/banner-event1.svg" alt="" class="w-[300px] h-[375px]" />
         <div class="flex flex-col items-center md:items-start text-center md:text-left">
           <p class="text-hijau">[About Conference]</p>
           <h1 class="text-[20px] md:text-[24px] font-semibold font-popins text-black">
             Transformational Sales Conference 2023
           </h1>
-          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[875px] mt-8 ml-2 md:ml-0">
+          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[800px] mt-8 ml-2 md:ml-0">
             "Don't find customers for your products, find products for your customers." ~ Seth Godin
           </p>
-          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[875px] mt-8 ml-2 md:ml-0">
+          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[800px] mt-8 ml-2 md:ml-0">
             It's crucial to adapt to the changing sales landscape in the digital age, and Seth Godin's quote emphasizes the importance of customer-centricity. Digital transformation has indeed shifted the focus towards online sales, but it's essential to remember that serving the customer's needs remains paramount. The Transformational Sales Conference sounds like a great opportunity to explore the evolving world of sales and learn how to provide excellent service in both online and offline contexts.
           </p>
           <div class="flex flex-col md:flex-row gap-[20px] md:gap-[31px] text-white mt-10 justify-center md:justify-start items-center">
@@ -222,13 +222,13 @@
       <!-- END EVENT 1 -->
 
       <!-- EVENT 2 -->
-      <div class="max-w-[1200px] min-h-[600px] flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[110px] mx-auto px-4 text-white">
-        <img src="../assets/banner-event2.svg" alt="" class="w-[300px] h-[375px]" />
+      <div class="min-h-[600px] flex flex-col md:flex-row justify-center items-center gap-14 text-white">
+        <img src="/assets/banner-event2.svg" alt="" class="w-[300px] h-[375px]" />
         <div class="flex flex-col items-center md:items-start text-center md:text-left">
           <p class="text-hijau">[About Conference]</p>
           <h1 class="text-[20px] md:text-[24px] font-semibold font-popins text-black">
             TBN Asia Conference 2023 </h1>
-          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[875px] mt-8 ml-2 md:ml-0">
+          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[800px] mt-8 ml-2 md:ml-0">
             In a world once plagued by environmental degradation and societal inequalities, a transformative movement emerged, igniting a path towards a sustainable future. This narrative follows the lives of four individuals whose passion and dedication became catalysts for change in agriculture, education, green technology, digital innovation, and art and culture.
 
             Together, they embarked on a shared mission to harmonize humanity's relationship with the planet and shape a brighter tomorrow.
@@ -252,13 +252,13 @@
       <!-- END EVENT 2 -->
 
       <!-- EVENT 3 -->
-      <div class="max-w-[1200px] min-h-[600px] flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[110px] mx-auto px-4 text-white">
-        <img src="../assets/banner-event3.svg" alt="" class="w-[300px] h-[375px]" />
+      <div class="min-h-[600px] flex flex-col md:flex-row justify-center items-center gap-14 text-white">
+        <img src="/assets/banner-event3.svg" alt="" class="w-[300px] h-[375px]" />
         <div class="flex flex-col items-center md:items-start text-center md:text-left">
           <p class="text-hijau">[About Conference]</p>
           <h1 class="text-[20px] md:text-[24px] font-semibold font-popins text-black">
             The Future for Social Enterprises          </h1>
-          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[875px] mt-8 ml-2 md:ml-0">
+          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[800px] mt-8 ml-2 md:ml-0">
             Traditionally, social enterprises have relied on market rate investments or pure philanthropic grants for their funding. With the development of innovative financial models like blended finance and risk adjusted market rate return impact investing, rich opportunities are generated for social enterprises to tap into the huge potential of private markets for capital. These opportunities can be catalytic for the social enterprise, and enable them to scale. Social enterprises are entrepreneurial organizations that blend social benefits and financial returns. 
 
             So the capital that they rely on should also sit on a continuum that ranges from philanthropy to market-return impact investing. This is the emerging capital market for social enterprises, and the future.          </p>
@@ -280,13 +280,13 @@
       <!-- END EVENT 3 -->
 
       <!-- EVENT 4 -->
-      <div class="max-w-[1200px] min-h-[600px] flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[110px] mx-auto px-4 text-white">
-        <img src="../assets/banner-event4.svg" alt="" class="w-[300px] h-[375px]" />
+      <div class="min-h-[600px] flex flex-col md:flex-row justify-center items-center gap-14 text-white">
+        <img src="/assets/banner-event4.svg" alt="" class="w-[300px] h-[375px]" />
         <div class="flex flex-col items-center md:items-start text-center md:text-left">
           <p class="text-hijau">[About Conference]</p>
           <h1 class="text-[20px] md:text-[24px] font-semibold font-popins text-black">
-            The Future of Education          </h1>
-          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[875px] mt-8 ml-2 md:ml-0">
+            The Future of Education</h1>
+          <p class="text-[12px] md:text-[17px] font-normal font-popins text-black w-[370px] md:w-[800px] mt-8 ml-2 md:ml-0">
             Universities have a unique role to play as catalysts for innovation among the next generation. But how do we turn “courses and classrooms” into powerful spaces for shaping the leaders of tomorrow? This panel will explore strategies for youth development, and how universities can foster a culture of entrepreneurship and creativity that drives innovation. Special emphasis will be given to how these can be applied to Indonesian institutions seeking to innovate.          </p>
           <div class="flex flex-col md:flex-row gap-[20px] md:gap-[31px] text-white mt-10 justify-center md:justify-start items-center">
             <a href="{{ route('event-detail4') }}">
@@ -314,7 +314,7 @@
     </p>
   </span>
     <div class="flex justify-center items-center mb-20 gap-[120px]">
-        <img src="../assets/Event-Grow.svg" alt="" class="w-[500px] h-[598px]">
+        <img src="/assets/Event-Grow.svg" alt="" class="w-[500px] h-[598px]">
         <div class="text-white w-[470px] h-[440px]">
             <h1 class="font-popins text-[27px] font-semibold ">Get yourself Inspired</h1>
             <p class="font-popins text-[17px] font-normal py-5">In a world full of possibilities, "Get Yourself Inspired" is a call to embrace life's beauty and your own potential. Imagine waking up each day with purpose, ready to tackle new challenges and explore uncharted territories. Whether pursuing personal goals, creating innovative solutions, or finding joy in everyday moments, inspiration unlocks the door to greatness. By seeking experiences that move you and surrounding yourself with uplifting people, you can transform your life and those around you.</p>
@@ -337,7 +337,7 @@
               class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-2xl shadow-md"
             >
               <img
-                src="../assets/partner1.svg"
+                src="/assets/partner1.svg"
                 alt="Image 1"
                 class="w-[1167px] h-[110px]"
               />
@@ -348,7 +348,7 @@
               class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
             >
               <img
-                src="../assets/partner2.svg"
+                src="/assets/partner2.svg"
                 alt="Image 2"
                 class="w-[1167px] h-[110px]"
               />
@@ -359,7 +359,7 @@
               class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
             >
               <img
-                src="../assets/partner3.svg"
+                src="/assets/partner3.svg"
                 alt="Image 3"
                 class="w-[1167px] h-[110px]"
               />
@@ -370,7 +370,7 @@
               class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
             >
               <img
-                src="../assets/partner4.svg"
+                src="/assets/partner4.svg"
                 alt="Image 4"
                 class="w-[1167px] h-[110px]"
               />
@@ -381,7 +381,7 @@
               class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
             >
               <img
-                src="../assets/partner5.svg"
+                src="/assets/partner5.svg"
                 alt="Image 5"
                 class="w-[1167px] h-[110px]"
               />
@@ -392,7 +392,7 @@
               class="w-[390px] md:w-full h-[200px] md:h-[100px] overflow-hidden bg-white rounded-lg shadow-md"
             >
               <img
-                src="../assets/partner6.svg"
+                src="/assets/partner6.svg"
                 alt="Image 6"
                 class="w-[1167px] h-[110px]"
               />
@@ -406,44 +406,44 @@
 
   <!-- TESTIMONI EVENT -->
   <div class="flex flex-col justify-center items-center">
-    <img src="../assets/event-Rectangle.svg" alt="" class="w-[119px] h-[14px] mt-20">
+    <img src="/assets/event-Rectangle.svg" alt="" class="w-[119px] h-[14px] mt-20">
     <h1 class="font-popins text-[56px] font-bold text-biru py-5">Testimoni Event</h1>
     
     <div class="relative w-full max-w-3xl mb-4 flex items-center">
         <!-- Navigation buttons -->
         <button id="prevBtn" class="bg-gray-200 px-4 py-2 rounded-full mr-2">
-            <img src="../assets/button-prev.svg" alt="">
+            <img src="/assets/button-prev.svg" alt="">
         </button>
 
         <!-- Slider main container -->
         <div class="relative flex-1">
             <div class="slide">
-                <img src="../assets/event-testimoni1.svg" alt="Image 1" class="w-full h-auto">
+                <img src="/assets/event-testimoni1.svg" alt="Image 1" class="w-full h-auto">
             </div>
             <div class="slide hidden">
-                <img src="../assets/event-testimoni2.svg" alt="Image 2" class="w-full h-auto">
+                <img src="/assets/event-testimoni2.svg" alt="Image 2" class="w-full h-auto">
             </div>
             <div class="slide hidden">
-                <img src="../assets/event-testimoni3.svg" alt="Image 3" class="w-full h-auto">
+                <img src="/assets/event-testimoni3.svg" alt="Image 3" class="w-full h-auto">
             </div>
         </div>
 
         <button id="nextBtn" class="bg-hijau px-4 py-2 rounded-full ml-2">
-            <img src="../assets/button-next.svg" alt="">
+            <img src="/assets/button-next.svg" alt="">
         </button>
     </div>
 </div>
 
 
-    <!-- FOOTER -->
+   <!-- FOOTER -->
     <section class="bg-white mt-10">
-      <div class="flex flex-col md:flex-row md:p-10 justify-between">
+      <div class="flex flex-col md:flex-row md:p-10 justify-between mx-20">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
-          <img src="../assets/logo footer.svg" alt="" />
+          <img src="/assets/logo footer.svg" alt="" />
           <p
             class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins"
           >
-            TBN Alliance adalah jaringan global wirausaha yang berorientasi pada
+            TBN Indonesia adalah jaringan global wirausaha yang berorientasi pada
             tujuan, investor dampak, dan pembangun kapasitas yang mengambil
             pendekatan kewirausahaan untuk mengentaskan kemiskinan di masyarakat
             berpenghasilan rendah dan kurang terlayani.
@@ -487,21 +487,21 @@
           </h1>
           <div class="flex gap-3 md:gap-[20px] py-5">
             <a href="https://www.instagram.com/tbn.indonesia/"
-              ><img src="../assets/nav-instagram.svg" alt=""
+              ><img src="/assets/nav-instagram.svg" alt=""
             /></a>
             <a href="https://www.youtube.com/@tbnindonesia902"
-              ><img src="../assets/nav-youtube.svg" alt=""
+              ><img src="/assets/nav-youtube.svg" alt=""
             /></a>
-            <a href="https://wa.me/+6282310001908"><img src="../assets/nav-whatsapp.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-gmail.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-link.svg" alt="" /></a>
+            <a href="https://wa.me/+6282310001908"><img src="/assets/nav-whatsapp.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-gmail.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-link.svg" alt="" /></a>
           </div>
           <h1 class="font-popins font-semibold text-[21px] md:text-lg">
             Hubungi Kami
           </h1>
           <div class="flex gap-1 mt-2">
             <img
-              src="../assets/icon email.svg"
+              src="/assets/icon email.svg"
               class="font-popins font-normal text-[17px]"
               alt=""
             />
@@ -513,12 +513,14 @@
         <h1
           class="justify-center items-center text-center p-5 text-white w-[380px] md:w-full text-[16px] font-bold"
         >
-          Copyright © 2023 - Transformational Business Network (TBN) Alliance -
+          Copyright © 2023 - Transformational Business Network (TBN) Indonesia -
           All rights reserved.
         </h1>
       </div>
     </section>
+
     <!-- END FOOTR -->
+
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="../js/eventslide.js"></script>

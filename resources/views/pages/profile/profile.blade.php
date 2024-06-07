@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forgot Password</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link
       rel="stylesheet"
@@ -16,22 +16,22 @@
     <nav class="bg-biru py-5 flex items-center justify-between w-full">
       <a href="{{ route('home') }}"
         ><img
-          src="../assets/panah.svg"
+          src="/assets/panah.svg"
           alt=""
           class="md:ml-20 w-[50px] h-[30px]"
       /></a>
       <a href="{{ route('home') }}"
-        ><img src="../assets/logo nav.svg" alt="" class="md:mr-20"
+        ><img src="/assets/logo nav.svg" alt="" class="md:mr-20"
       /></a>
     </nav>
     <!-- END NAVBAR -->
 
     <!-- DATA PROFILE -->
-    <section>
-      <div class="flex justify-center items-center mt-20 gap-20">
+    <section class="border shadow-xl rounded-xl mt-10 mx-80">
+      <div class="flex justify-center items-center  gap-20">
         <span>
           <img
-            src="../assets/foto-profile.svg"
+            src="/assets/foto-profile.svg"
             alt=""
             class="w-[350px] h-[509px]"
           />
@@ -49,17 +49,28 @@
           <p class="font-popins text-[18px] font-normal">
             Jl.Gajah Selatan No.2b
           </p>
+        <span class="flex gap-3">
           <a href="{{ route('profile-edit') }}"
             ><span
-              class="flex mt-10 border p-2 border-hijau rounded-xl gap-5 items-center justify-center"
+              class="flex mt-10 border p-2 bg-hijau rounded-xl gap-5 items-center justify-center"
             >
-              <p><img src="../assets/icon-editprofile.svg" alt="" /></p>
-              <p class="text-hijau font-popins text-[21px] font-semibold">
+              <p><img src="/assets/icon-editprofile.svg" alt="" /></p>
+              <p class="text-white font-popins text-[21px] font-semibold">
                 Edit Profile
               </p>
             </span>
           </a>
-        </span>
+          <a href="{{ route('history-event') }}"
+            ><span
+              class="flex mt-10 border p-2 bg-hijau rounded-xl gap-5 items-center justify-center"
+            >
+              <p class="text-white font-popins text-[21px] font-semibold">
+                History Event
+              </p>
+            </span>
+          </a>
+          </span> 
+        </span> 
       </div>
     </section>
     <!-- END DATA PROFILE -->

@@ -21,13 +21,13 @@
     <nav class="bg-biru py-5 flex items-center justify-between w-full">
       <a href="{{ route('home') }}">
         <img
-          src="../assets/panah.svg"
+          src="/assets/panah.svg"
           alt=""
           class="md:ml-20 w-[50px] h-[30px]"
         />
       </a>
       <a href="{{ route('home') }}">
-        <img src="../assets/logo nav.svg" alt="" class="md:mr-20" />
+        <img src="/assets/logo nav.svg" alt="" class="md:mr-20" />
       </a>
     </nav>
     <!-- END NAVBAR -->
@@ -44,7 +44,7 @@
               class="flex items-center text-gray-500 hover:text-gray-700 mb-4"
             >
               <img
-                src="../assets/panah-forgotpassword.svg"
+                src="/assets/panah-forgotpassword.svg"
                 alt="Back to login"
                 class="w-5 h-5 mr-2"
               />
@@ -83,13 +83,13 @@
                 Submit
               </button>
             </form>
-            <img src="../assets/or-login.svg" alt="" class="py-10" />
+            <img src="/assets/or-login.svg" alt="" class="py-10" />
             <div class="flex justify-center space-x-4">
               <button
                 class="w-1/2 flex items-center justify-center bg-white border border-hijau rounded-lg py-2 hover:bg-gray-100"
               >
                 <img
-                  src="../assets/google.svg"
+                  src="/assets/google.svg"
                   alt="Google"
                   class="w-5 h-5 mr-2"
                 />
@@ -99,7 +99,7 @@
                 class="w-1/2 flex items-center justify-center bg-white border border-hijau rounded-lg py-2 hover:bg-gray-100"
               >
                 <img
-                  src="../assets/apple.svg"
+                  src="/assets/apple.svg"
                   alt="Apple"
                   class="w-5 h-5 mr-2"
                 />
@@ -113,7 +113,7 @@
               class="flex items-center text-gray-500 hover:text-gray-700 mb-4"
             >
               <img
-                src="../assets/panah-forgotpassword.svg"
+                src="/assets/panah-forgotpassword.svg"
                 alt="Back to login"
                 class="w-5 h-5 mr-2"
               />
@@ -272,14 +272,14 @@
               </button>
               <dialog id="my_modal_1" class="modal">
                 <div
-                  class="modal-box bg-white p-10 rounded-lg shadow-lg flex flex-col"
+                  class="modal-box  py-5 px-20 rounded-md shadow-lg flex flex-col"
                 >
-                  <p class="text-[16px] font-medium text-gray-700 mb-14">
+                  <p class="text-[16px] font-medium text-gray-700 mb-14 justify-start">
                     Forgot Password
                   </p>
                   <button
                     type="button"
-                    class="w-full bg-red-500 text-white py-3 px-4 rounded-full text-lg font-semibold mb-4"
+                    class="w-full bg-red-500 text-white py-3 px-20 rounded-full text-lg font-semibold mb-4"
                     onclick="closeModal()"
                   >
                     New Password Success
@@ -298,7 +298,7 @@
         <!-- Carousel -->
         <div
           class="md:block w-full md:w-[500px] bg-cover flex items-center justify-center"
-          style="background-image: url('../assets/image-placeholder.jpg')"
+          style="background-image: url('/assets/image-placeholder.jpg')"
         >
           <div>
             <div class="swiper-container">
@@ -308,7 +308,7 @@
                     class="w-full h-[300px] md:h-[600px] overflow-hidden bg-white rounded-2xl shadow-md"
                   >
                     <img
-                      src="../assets/caraousel-1.svg"
+                      src="/assets/caraousel-1.svg"
                       alt="Image 1"
                       class="object-cover w-full h-full"
                     />
@@ -319,7 +319,7 @@
                     class="w-full h-[300px] md:h-[600px] overflow-hidden bg-white rounded-lg shadow-md"
                   >
                     <img
-                      src="../assets/caraousel-2.svg"
+                      src="/assets/caraousel-2.svg"
                       alt="Image 2"
                       class="object-cover w-full h-full"
                     />
@@ -330,7 +330,7 @@
                     class="w-full h-[300px] md:h-[600px] overflow-hidden bg-white rounded-lg shadow-md"
                   >
                     <img
-                      src="../assets/caraousel-3.svg"
+                      src="/assets/caraousel-3.svg"
                       alt="Image 3"
                       class="object-cover w-full h-full"
                     />

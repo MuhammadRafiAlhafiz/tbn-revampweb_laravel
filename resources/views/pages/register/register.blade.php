@@ -17,18 +17,18 @@
     <nav class="bg-biru py-5 flex items-center justify-between w-full">
       <a href="{{ route('event') }}"
         ><img
-          src="../assets/panah.svg"
+          src="/assets/panah.svg"
           alt=""
-          class="md:ml-20 w-[50px] h-[30px]"
+          class="ml-4 md:ml-20 w-10 h-6"
       /></a>
       <a href="{{ route('home') }}"
-        ><img src="../assets/logo nav.svg" alt="" class="md:mr-20"
+        ><img src="/assets/logo nav.svg" alt="" class="mr-4 md:mr-20"
       /></a>
     </nav>
     <!-- END NAVBAR -->
 
     <!-- FORM REGIS -->
-    <section class="md:ml-80">
+    <section class="md:flex justify-center items-center flex-col ml-16">
       <h1
         class="md:w-[800px] h-[40px] font-nunito ml-10 text-[30px] md:text-[42px] font-extrabold md:ml-72 py-5"
       >
@@ -141,9 +141,9 @@
     
     <!-- FOOTER -->
     <section class="bg-white mt-10">
-      <div class="flex flex-col md:flex-row md:p-10 justify-between">
+      <div class="flex flex-col md:flex-row md:p-10 justify-between mx-10">
         <div class="w-full md:w-[400px] mb-5 md:mb-0">
-          <img src="../assets/logo footer.svg" alt="" />
+          <img src="/assets/logo footer.svg" alt="" />
           <p
             class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins"
           >
@@ -191,21 +191,21 @@
           </h1>
           <div class="flex gap-3 md:gap-[20px] py-5">
             <a href="https://www.instagram.com/tbn.indonesia/"
-              ><img src="../assets/nav-instagram.svg" alt=""
+              ><img src="/assets/nav-instagram.svg" alt=""
             /></a>
             <a href="https://www.youtube.com/@tbnindonesia902"
-              ><img src="../assets/nav-youtube.svg" alt=""
+              ><img src="/assets/nav-youtube.svg" alt=""
             /></a>
-            <a href="https://wa.me/+6282310001908"><img src="../assets/nav-whatsapp.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-gmail.svg" alt="" /></a>
-            <a href=""><img src="../assets/nav-link.svg" alt="" /></a>
+            <a href="https://wa.me/+6282310001908"><img src="/assets/nav-whatsapp.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-gmail.svg" alt="" /></a>
+            <a href=""><img src="/assets/nav-link.svg" alt="" /></a>
           </div>
           <h1 class="font-popins font-semibold text-[21px] md:text-lg">
             Hubungi Kami
           </h1>
           <div class="flex gap-1 mt-2">
             <img
-              src="../assets/icon email.svg"
+              src="/assets/icon email.svg"
               class="font-popins font-normal text-[17px]"
               alt=""
             />
@@ -217,11 +217,12 @@
         <h1
           class="justify-center items-center text-center p-5 text-white w-[380px] md:w-full text-[16px] font-bold"
         >
-          Copyright © 2023 - Transformational Business Network (TBN) Alliance -
+          Copyright © 2023 - Transformational Business Network (TBN) Indonesia -
           All rights reserved.
         </h1>
       </div>
     </section>
     <!-- END FOOTR -->
+    
   </body>
 </html>

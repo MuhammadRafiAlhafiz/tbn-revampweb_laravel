@@ -20,7 +20,7 @@
         <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
           <a href="{{ route('home') }}"
             ><img
-              src="../assets/logo nav.svg"
+              src="/assets/logo nav.svg"
               alt="logo navbar"
               class="w-[100px]"
           /></a>
@@ -41,7 +41,7 @@
         </div>
         <button class="w-16 lg:hidden block buttonToogle">
           <img
-            src="../assets/menu1.svg"
+            src="/assets/menu1.svg"
             alt="Menu"
             class="w-[100px] md:w-0 h-"
           />
@@ -125,7 +125,7 @@
                 class="w-full h-[300px] md:h-[600px] overflow-hidden bg-white rounded- shadow-md"
               >
                 <img
-                  src="../assets/caraousel-1.svg"
+                  src="/assets/caraousel-1.svg"
                   alt="Image 1"
                   class="object-cover w-full h-full"
                 />
@@ -136,7 +136,7 @@
                 class="w-full h-[300px] md:h-[600px] overflow-hidden bg-white rounded-lg shadow-md"
               >
                 <img
-                  src="../assets/caraousel-2.svg"
+                  src="/assets/caraousel-2.svg"
                   alt="Image 2"
                   class="object-cover w-full h-full"
                 />
@@ -147,7 +147,7 @@
                 class="w-full h-[300px] md:h-[600px] overflow-hidden bg-white rounded-lg shadow-md"
               >
                 <img
-                  src="../assets/caraousel-3.svg"
+                  src="/assets/caraousel-3.svg"
                   alt="Image 3"
                   class="object-cover w-full h-full"
                 />
@@ -168,36 +168,21 @@
           </p>
 
           <div>
-            <div class="flex">
-                <label
-                      for="First_Name"
-                      class="block text-sm font-medium text-gray-700"
-                      >Frist Name</label
-                    >
-                    <label
-                          for="Last_Name"
-                          class="block text-sm font-medium text-gray-700 ml-44"
-                          >Last Name</label
-                        >
-                   </div>  
-                    <div class="mb-4 flex gap-3">
-                        
-                        <input
-                          type="text"
-                          id="firs_name"
-                          name="flast_name"
-                          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[220px] p-2 shadow-sm sm:text-sm border-gray-600 border-2 rounded-md"
-                        
-                            >
-                            <input
-                              type="text"
-                              id="last_name"
-                              name="last_name"
-                              class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[250px] p-2 shadow-sm sm:text-sm border-gray-600 border-2 rounded-md"
-                            />
-                    </div>
-
-                    <div class="flex">
+          <div class="mt-5 mb-4 relative">
+            <label
+              for="full_name"
+              class="block text-sm font-medium text-gray-700"
+              >Full Name</label
+            >
+            <div class="relative">
+              <input
+                type="full_name"
+                id="full_name"
+                name="full_name"
+                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[500px] p-2 shadow-sm sm:text-sm border-gray-600 border-2 rounded-md"
+              />
+          </div>
+                    <div class="flex mt-4">
                     <label
                           for="email"
                           class="block text-sm font-medium text-gray-700"
@@ -306,14 +291,14 @@
           <div class="flex mt-5 justify-center gap-10">
             <a href="{{ route('email-confirm') }}"
               ><img
-                src="../assets/google.svg"
+                src="/assets/google.svg"
                 class="border py-2 px-10 rounded-2xl border-hijau"
                 alt=""
             /></a>
 
             <a href="{{ route('email-confirm') }}"
               ><img
-                src="../assets/apple.svg"
+                src="/assets/apple.svg"
                 class="border py-2 px-10 rounded-2xl border-hijau"
                 alt=""
             /></a>
