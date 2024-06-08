@@ -20,28 +20,31 @@
     <!-- END NAVBAR -->
 
     <!-- Edit Profile -->
-    <section class="flex flex-col justify-center items-center mt-3">
-      <img src="/assets/logo-profile.svg" alt="Profile" class="w-[200px] h-[200px]" />
-      <button class="font-popins text-[17px] font-normal border mt-5 p-2 rounded-xl">Change Profile Photo</button>
+    <form method="POST" action="{{ route('update-profile') }}">
+      @csrf
+    <section class="flex flex-col justify-center items-center">
+
+      <img src="/assets/logo-profile.svg" alt="Profile" class=" w-[180px] h-[auto]" />
+      <button class="font-popins  bg-hijau text-[7px] font-normal border mt-5 p-2 rounded-xl">Change Profile</button>
 
       <div class="w-full md:w-[700px]">
-        <label for="full_name" class="block text-sm font-medium text-gray-700 mt-3">Full Name</label>
-        <input type="text" id="full_name" name="full_name" placeholder="Full Name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 sm:text-sm border-2 rounded-xl" />
+        <label for="name" class="block text-sm font-medium text-gray-700 mt-3">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Full Name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 sm:text-sm border-2 rounded-xl" />
+
+        <label for="password" class="block text-sm font-medium text-gray-700 mt-3">Password</label>
+        <input type="pass" id="password" name="password" placeholder="Password" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 sm:text-sm border-2 rounded-xl" />
 
         <label for="email" class="block text-sm font-medium text-gray-700 mt-3">Email</label>
-        <input type="text" id="email" name="email" placeholder="Email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 sm:text-sm border-2 rounded-xl" />
+        <input type="email" id="email" name="email" placeholder="Email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 sm:text-sm border-2 rounded-xl" />
 
-        <label for="phone_number" class="block text-sm font-medium text-gray-700 mt-3">Phone Number</label>
-        <input type="text" id="phone_number" name="phone_number" placeholder="Phone Number" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 sm:text-sm border-2 rounded-xl" />
-
-        <label for="address" class="block text-sm font-medium text-gray-700 mt-3">Address</label>
-        <input type="text" id="address" name="address" placeholder="Address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 sm:text-sm border-2 rounded-xl" />
+        <label for="no_telp" class="block text-sm font-medium text-gray-700 mt-3">Phone Number</label>
+        <input type="tel" id="no_telp" name="no_telp" placeholder="Phone Number" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 sm:text-sm border-2 rounded-xl" />
       </div>
 
       <div class="py-5">
-        <button class="btn border bg-hijau w-[208px] h-[52px] p-[10px] rounded-xl text-white font-popins text-[21px] font-semibold" onclick="document.getElementById('my_modal_1').showModal()">Update Profile</button>
+        <button class="border bg-hijau w-[208px] h-[52px] p-[5px] rounded-xl text-white font-popins text-[21px] font-semibold" >Update Profile</button> </form>
       </div>
-
+{{-- onclick="document.getElementById('my_modal_1').showModal()"
       <!-- Modal -->
       <dialog id="my_modal_1" class="modal">
         <div class="modal-box bg-graybg flex flex-col justify-center items-center p-6 rounded-md">
@@ -61,16 +64,17 @@
         <div class="modal-box bg-graybg flex flex-col justify-center items-center p-6 rounded-md">
           <img src="/assets/ceklis-editprofile.svg" alt="Checkmark Icon" class="w-12 h-12 mb-4">
           <p class="py-4 font-poppins text-[22px] font-normal text-center">Profile successfully changed</p>
-          <a href="{{ route('profile') }}"><button class="btn bg-green-600 w-[108px] rounded-[36px] text-white py-2" onclick="document.getElementById('confirmation_modal').close()">Done</button></a>
+          <a href="{{ route('profile') }}">
+            <button type="submit" class="btn bg-green-600 w-[108px] rounded-[36px] text-white py-2" onclick="document.getElementById('confirmation_modal').close()">Done</button> </a></form>
         </div>
       </dialog>
-    </section>
+    </section> --}}
 
-    <script>
+    {{-- <script>
       function showConfirmation() {
         document.getElementById('my_modal_1').close();
         document.getElementById('confirmation_modal').showModal();
       }
-    </script>
+    </script> --}}
   </body>
 </html>

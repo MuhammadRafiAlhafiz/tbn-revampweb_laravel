@@ -21,8 +21,15 @@
           class="md:ml-20 w-[50px] h-[30px]"
       /></a>
       <a href="{{ route('home') }}"
-        ><img src="/assets/logo nav.svg" alt="" class="md:mr-20"
-      /></a>
+        >
+        @auth
+        <form action="{{ route('logout') }}" method="POST" class="md:mr-20">
+          @csrf
+          <button type="submit" class="border-2 px-4 py-2 rounded-lg font-bold text-white bg-red-600 hover:bg-red-700">Logout</button>
+        </form>
+      @endauth
+      
+      </a>
     </nav>
     <!-- END NAVBAR -->
 
@@ -38,17 +45,15 @@
         </span>
         <span>
           <p class="font-popins text-[23px] font-semibold">Name:</p>
-          <p class="font-popins text-[18px] font-normal">Farsha Adhikari</p>
+          <p class="font-popins text-[18px] font-normal">{{ $user->name}}</p>
           <p class="font-popins text-[23px] font-semibold mt-5">Email:</p>
-          <p class="font-popins text-[18px] font-normal">Farshaadk@gmail.com</p>
+          <p class="font-popins text-[18px] font-normal">{{ $user->email }}</p>
           <p class="font-popins text-[23px] font-semibold mt-5">
             Phone Number:
           </p>
-          <p class="font-popins text-[18px] font-normal">087629873672</p>
-          <p class="font-popins text-[23px] font-semibold mt-5">Address</p>
-          <p class="font-popins text-[18px] font-normal">
-            Jl.Gajah Selatan No.2b
-          </p>
+          <p class="font-popins text-[18px] font-normal">{{ $user->no_telp }}</p>
+
+
         <span class="flex gap-3">
           <a href="{{ route('profile-edit') }}"
             ><span
