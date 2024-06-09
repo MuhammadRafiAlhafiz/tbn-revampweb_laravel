@@ -156,35 +156,43 @@ class ProgramController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function registerEvent(Request $request)
-    {
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'telp' => 'required',
-            'ticket_id' => 'required',
-        ]);
+{
+    $request->validate([
+        'name' => 'required',
+        'email' => 'required|email',
+        'telp' => 'required',
+        'ticket_type' => 'required',
+        'price' => 'required',
+    ]);
 
-        // Mendapatkan informasi tiket berdasarkan ID
-        $program = Program::find($request->ticket_id);
+    // Mendapatkan informasi tiket berdasarkan tipe
+    $ticketType = $request->ticket_type;
+    $price = $ticketType === 'free' ? 0 : $request->price;
 
-        // Validasi jika program tidak ditemukan
-        if (!$program) {
-            return redirect()->back()->with('error', 'Program tidak ditemukan.');
-        }
+    // Lakukan sesuai kebutuhan, misalnya menyimpan ke database
+    $user = new User();
+    $user->name = $request->name;
+    $user->email = $request->email;
+    $user->no_telp = $request->telp;
+    $user->save();
 
-        // Lakukan sesuai kebutuhan, misalnya menyimpan ke database
-        // Contoh: Simpan data user ke dalam database
-        $user = new User();
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->no_telp = $request->telp;
-        $user->save();
-
-        // Jika Anda juga perlu menghubungkan user dengan program yang dipilih, Anda dapat melakukannya di sini
-        // Misalnya, menyimpan relasi antara user dan program
-        $user->programs()->attach($program);
-
-        // Redirect ke halaman yang sesuai
-        return redirect()->route('home')->with('success', 'Registrasi program berhasil. Terima kasih!');
+    // Jika Anda juga perlu menghubungkan user dengan program yang dipilih, Anda dapat melakukannya di sini
+    $program = Program::find($request->ticket_id);
+    if ($program) {
+        $user->programs()->attach($program, ['price' => $price]);
     }
+
+    // Redirect ke halaman yang sesuai
+    return redirect()->route('event')->with('success', 'Registrasi program berhasil. Terima kasih!');
+}
+
+public function getPrice($id)
+{
+    $program = Program::find($id);
+    if ($program) {
+        return response()->json(['price' => $program->price]);
+    }
+    return response()->json(['error' => 'Program not found'], 404);
+}
+
 }

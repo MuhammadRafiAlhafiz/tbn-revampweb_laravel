@@ -5,9 +5,10 @@ use App\Models\Page;
 use App\Models\Program;
 use App\Http\Controllers\ProfileController;
 use App\Models\Blog;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ParticipantController;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ExperienceController;
+use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\AuthController;
@@ -145,7 +146,7 @@ Route::get('/payment', function () {
 
 Route::post('/register-user', [RegisterController::class, 'addUser'])->name('add-user');
 
-Route::post('/register-event', [ParticipantController::class, 'addEvent'])->name('register-event');
+// Route::post('/register-event', [ParticipantController::class, 'addEvent'])->name('register-event');
 Route::get('/login/google', [AuthController::class, 'redirectToGoogle'])->name('login.google');
 Route::get('/login/google/callback', [AuthController::class, 'handleGoogleCallback']);
 
@@ -160,7 +161,7 @@ Route::get('/profile', [ProfileController::class, 'show'])->name('profile');
 Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile-edit');
 Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile-update');
 
-Route::post('/participant/addEvent', [ParticipantController::class, 'addEvent'])->name('participant.addEvent');
+// Route::post('/participant/addEvent', [ParticipantController::class, 'addEvent'])->name('participant.addEvent');
 
 Route::get('/register/{id}', function ($id) {
     // Fetch program details based on the provided ID if needed
@@ -175,3 +176,6 @@ Route::post('/update-profile', [RegisterController::class, 'updateProfile'])->na
 Route::post('/experiences', [ExperienceController::class, 'store'])->name('experience.store');
 
 Route::resource('experience', ExperienceController::class);
+
+Route::get('program/getPrice/{id}', [ProgramController::class, 'getPrice'])->name('program.getPrice');
+Route::post('/register-event/{id}', [ParticipantController::class, 'addEvent'])->name('register-event');
