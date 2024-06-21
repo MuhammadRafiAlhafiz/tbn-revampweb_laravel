@@ -128,7 +128,7 @@
     </section>
     <!-- END LETS GROW Together -->
 
-    <!-- Sponsor -->
+    {{-- <!-- Sponsor -->
     <h1 class="font-nunito text-[42px] font-extrabold text-center mt-20">Our Partners</h1>
     <div class="max-w-[100px] min-h-[200px] flex flex-col justify-center mx-auto text-white items-center">
         <div class="w-full md:w-[1000px]">
@@ -174,7 +174,7 @@
             </div>
         </div>
     </div>
-    <!-- END SPONSOR -->
+    <!-- END SPONSOR --> --}}
 
     <!-- TESTIMONI EVENT -->
     <div class="flex flex-col justify-center items-center">

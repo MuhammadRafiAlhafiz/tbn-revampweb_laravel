@@ -21,7 +21,7 @@ class ContactController extends Controller
             'phone_number' => $request->phone_number, // Mengubah no_telp menjadi phone_number
             'your_message' => $request->your_message,
         ], function($message) {
-            $message->to('hello@tbnalliance.org', 'Admin TBN')->subject('New Contact Form Submission');
+            $message->to('hello@tbnIndonesia.org', 'Admin TBN')->subject('New Contact Form Submission');
         });
 
         // Redirect kembali ke halaman kontak dengan pesan sukses

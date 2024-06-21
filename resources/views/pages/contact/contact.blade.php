@@ -48,7 +48,7 @@
                 src="/assets/email-contact.svg"
                 alt=""
                 class="mr-2"
-              />hello@tbnalliance.org
+              />hello@tbnIndonesia.org
             </span>
             <span
               class="flex items-center mb-2 text-white text-[14px] md:text-[17px] font-normal"

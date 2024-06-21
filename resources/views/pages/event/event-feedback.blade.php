@@ -188,7 +188,7 @@
         </h1>
         <div class="flex gap-1 mt-2">
           <img src="/assets/icon email.svg" class="font-popins font-normal text-[17px]" alt=""/>
-          <a href="https://www.tbnalliance.org/">hello@tbnalliance.org</a>
+          <a href="https://www.tbnIndonesia.org/">hello@tbnIndonesia.org</a>
         </div>
       </div>
     </div>

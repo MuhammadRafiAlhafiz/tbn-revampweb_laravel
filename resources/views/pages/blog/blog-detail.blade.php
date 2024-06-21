@@ -49,7 +49,7 @@
             </span>
                     <span class="flex mt-7 gap-5">
               <img src="/assets/blog-popular1.svg" alt="" class="w-[155px] h-[93px]" />
-              <h1 class="w-[400px] h-[100px] font-popins text-[21px] font-semibold">TBN Alliance: Kolaborasi Penting?</h1>
+              <h1 class="w-[400px] h-[100px] font-popins text-[21px] font-semibold">TBN Indonesia: Kolaborasi Penting?</h1>
             </span>
                     <span class="flex py-10 gap-5">
               <img src="/assets/blog-popular2.svg" alt="" class="w-[155px] h-[93px]" />
@@ -73,8 +73,8 @@
                   <div class="flex gap-10">
                     <img src="/assets/latepos1.svg" alt="" class="w-[220px] h-[260px]" />
                     <span class=" flex-col justify-end align-middle">
-                      <h1 class="w-[220px] h-[72px] font-popins text-[18px] font-semibold">TBN Alliance : Kolaborasi Penting?</h1>
-                      <p class="w-[220px] h-[72px] font-popins text-[16px] font-normal">Meningkatkan Dampak Sosial dengan TBN Alliance</p>
+                      <h1 class="w-[220px] h-[72px] font-popins text-[18px] font-semibold">TBN Indonesia : Kolaborasi Penting?</h1>
+                      <p class="w-[220px] h-[72px] font-popins text-[16px] font-normal">Meningkatkan Dampak Sosial dengan TBN Indonesia</p>
                       <p class="w-[220px] text-biru text-[13px] font-normal font-popins">Nanda Ardika • 14 Mei 2024</p>
                       <a href=""><button class="border py-2 px-8 justify-center items-center rounded-3xl bg-biru text-white mt-5">Read More</button></a>
                     </span>

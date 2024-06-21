@@ -13,6 +13,7 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\AuthController;
 
+use App\Http\Controllers\EventController;
 
 
 /*
@@ -80,6 +81,14 @@ Route::get('/event', function () {
     $programs = Program::all();
     return view('pages.event.event', ['programs' => $programs]);
 })->name('event');
+
+Route::get('/event-history', function () {
+    $programs = Program::all();
+    return view('pages.event.event-history', ['programs' => $programs]);
+})->name('event-history');
+
+Route::get('/history-event', [EventController::class, 'eventHistory'])->name('event.history');
+
 
 Route::get('/event-detail/{id}', function ($id) {
     $program = Program::findOrFail($id);

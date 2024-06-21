@@ -35,7 +35,7 @@
 
                 <input type="hidden" id="program_price" name="program_price" value="{{ $program->price }}">
 
-                <label for="name" class="w-[400px] font-poppins text-[17px] font-normal">Full Name</label>
+                <label for="name" class="w-[400px] font-poppins text-[17px] font-normal">Full Nama Lengkap</label>
                 <input type="text" id="name" name="name" placeholder="Full Name"
                     class="border flex w-full md:w-[1077px] h-[50px] rounded-xl px-3"
                     value="{{ auth()->user()->name }}">
@@ -105,7 +105,7 @@
             <div class="w-full md:w-[400px] mb-5 md:mb-0">
                 <img src="/assets/logo footer.svg" alt="" />
                 <p class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-poppins">
-                    TBN Alliance adalah jaringan global wirausaha yang berorientasi pada
+                    TBN Indonesia adalah jaringan global wirausaha yang berorientasi pada
                     tujuan, investor dampak, dan pembangun kapasitas yang mengambil
                     pendekatan kewirausahaan untuk mengentaskan kemiskinan di masyarakat
                     berpenghasilan rendah dan kurang terlayani.

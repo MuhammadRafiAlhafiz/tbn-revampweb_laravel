@@ -266,7 +266,7 @@
       <img src="/assets/baner4.svg" class="flex mx-auto py-24 w-50" alt="" />
     </div>
     <!-- end image baner -->
-
+{{-- 
     <!-- OUR PARTNERS -->
     <h1 class="font-nunito text-[42px] font-extrabold text-center mt-10">
       Our Partners
@@ -291,7 +291,7 @@
       </div>
       </div>
   
-    <!-- END OUR PARTNERS -->
+    <!-- END OUR PARTNERS --> --}}
 
     <!-- CONTACT -->
     <section class="bg-white md:mx-56 md:my-40">
@@ -367,7 +367,7 @@
             <p class="text-[27px] font-semibold">Info</p>
             <span class="flex flex-row items-center gap-5 text-[17px]">
               <img src="/assets/email-contact.svg" alt="" />
-              <p>hello@tbnalliance.org</p>
+              <p>hello@tbnIndonesia.org</p>
             </span>
             <span class="flex flex-row items-center gap-5 text-[17px]">
               <img src="/assets/telp-contact.svg" alt="" />

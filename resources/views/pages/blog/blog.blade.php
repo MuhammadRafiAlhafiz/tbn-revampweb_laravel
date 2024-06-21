@@ -37,7 +37,7 @@
     <!-- END Background Blog -->
 
     <!-- TOP ARTICLES -->
-    <section class="mt-[300px] mx-20">
+    <section class="mt-[300px] mx-32">
         <h1 class="font-popins text-[56px] font-bold ">TOP ARTICLES</h1>
         <div class="flex justify-between items-center mt-10">
             <!-- Article 1 -->
@@ -66,7 +66,7 @@
                         </div><div class="flex justify-center items-center gap-24 mt-16 mx-32"> <!-- Menutup row sebelum membuka yang baru -->
                     @endif
                 @endforeach
-            </div>
+            </div></section>
             <!-- END Article 1 -->
 
             <!-- END TOP ARTICLES -->
@@ -84,10 +84,10 @@
                             <span>
                                 <img src="/assets/latepos1.svg" alt="" class="w-[220px] h-[260px]" />
                                 <h1 class="w-[220px] h-[72px] font-popins text-[18px] font-semibold">
-                                    TBN Alliance: Kolaborasi Penting?
+                                    TBN Indonesia: Kolaborasi Penting?
                                 </h1>
                                 <p class="w-[220px] h-[72px] font-popins text-[16px] font-normal">
-                                    Meningkatkan Dampak Sosial dengan TBN Alliance
+                                    Meningkatkan Dampak Sosial dengan TBN Indonesia
                                 </p>
                                 <p class="w-[220px] text-biru text-[13px] font-normal font-popins">
                                     Nanda Ardika • 14 Mei 2024
@@ -117,7 +117,7 @@
                         <span class="flex mt-7 gap-5">
                             <img src="/assets/blog-popular1.svg" alt="" class="w-[155px] h-[93px]" />
                             <h1 class="w-[193px] h-[83px] font-popins text-[21px] font-semibold">
-                                TBN Alliance: Kolaborasi Penting?
+                                TBN Indonesia: Kolaborasi Penting?
                             </h1>
                         </span>
                         <span class="flex py-10 gap-5">

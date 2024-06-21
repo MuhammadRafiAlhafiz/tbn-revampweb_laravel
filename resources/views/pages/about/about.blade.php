@@ -21,7 +21,7 @@
           <h1
             class="font-semibold text-[15px] md:text-[21px] leading-tight md:leading-normal mt-7 md:mt-8"
           >
-            TBN Alliance is a global network of purpose-driven entrepreneurs,
+            TBN Indonesia is a global network of purpose-driven entrepreneurs,
             impact investors and capacity builders who take an enterprise
             approach to alleviate poverty in low-income and underserved
             communities
@@ -30,7 +30,7 @@
             class="font-semibold text-[15px] md:text-[21px] leading-tight md:leading-normal mt-7 md:mt-8"
           >
             Founded by one of the pioneers of impact investing, Dr. Dato Kim
-            Tan, TBN Alliance was then launched in 2003 through the creation of
+            Tan, TBN Indonesia was then launched in 2003 through the creation of
             a strategic partnership with Belmont University and Templeton
             Religion Trust.
           </h1>
@@ -74,7 +74,7 @@
             markets and in culturally and religiously diverse regions. The
             results are success stories of transformational business with a
             poverty alleviation focus that have achieved scale in Africa and
-            Asia. The Alliance was launched in September 2023 in a strategic
+            Asia. The Indonesia was launched in September 2023 in a strategic
             partnership with Belmont University Innovation Labs with the support
             of the Templeton Religion Trust, a global charitable trust chartered
             by Sir John Templeton. We launched with four founding chapters -
